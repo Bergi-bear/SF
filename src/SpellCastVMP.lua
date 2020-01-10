@@ -246,15 +246,11 @@ function InitSpellTrigger()
 			if (data==nil) then data = {} HandleData[GetHandleId(caster)] = data end
 			data.shieldhp = 1000
 			DestroyTextTag(data.ebar)
-			--new = BlzCreateUnitWithSkin(GetAlly(ownplayer), FourCC("e000"), casterX, casterY, GetUnitFacing(caster), FourCC("e000"))
-			--anydata[GetHandleId(new)]=1000
-			--DestroyEffect(AddSpecialEffectTarget("BubbleShield.mdx",caster,"origin"))
 			UnitAddAbility(caster,FourCC('A00K'))
 			AddBar(caster)
 			TimerStart(CreateTimer(), 1, true, function()
 				if data.shieldhp<=0 then
 					print("Shield is broken")
-					RemoveUnit(new)
 					UnitRemoveAbility(caster,FourCC('A00K'))
 					PauseTimer(GetExpiredTimer())
 					DestroyTimer(GetExpiredTimer())
@@ -265,6 +261,3 @@ function InitSpellTrigger()
 		end
 	end)
 end
-
-
-TimerStart(CreateTimer(), 5, false, function()	UnitRemoveAbility(caster,FourCC('A00K')) end)

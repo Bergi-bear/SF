@@ -5,8 +5,15 @@ pack.build(
 		[[C:\Users\Bergi\IdeaProjects\SpellFighters]],
 		'map.w3x',
 		{
-			'src',
-
+			'src\\InitGlobals.lua',
+			'src\\3dbar.lua',
+			'src\\Entire.lua',
+			'src\\GameCore',
+			'src\\SpellCastVMP',
+			'src\\DamageSystem',
+			'src\\Math.lua',
+			'src\\Period.lua',
+			'src\\AICast.lua',
 		},
-		'game1'
+		'editor1'
 )
