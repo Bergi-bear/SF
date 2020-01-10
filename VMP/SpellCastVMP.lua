@@ -1,4 +1,4 @@
-function CasrArea(caster,id,x,y,range) -- Берги Медведь
+function CasrArea(caster,id,x,y,range)
 
 	local dummy=CreateUnit(GetOwningPlayer(caster), FourCC('e000'), x, y, 0)--
 	UnitAddAbility(dummy,id)
