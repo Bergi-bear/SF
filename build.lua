@@ -16,6 +16,6 @@ pack.build(
 			--'src\\Period.lua',
 			--'src\\AICast.lua',
 		},
-		'editor',
+		'game',
 		true
 )

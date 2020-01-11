@@ -62,8 +62,6 @@ function GetNearblyAlluUnit(unit,range,flag)
 	end
 	--local imax=1
 
-	BlzGetUnitRealField(e,UNIT_RF_MANA)
-
 	GroupEnumUnitsInRange(perebor,x,y,range,null)
 	while true do
 		e = FirstOfGroup(perebor)
@@ -131,26 +129,25 @@ function InitTimers()
 
 
 				--[Блок врагов
-				if GetUnitCurrentOrder(u)~="attack" then
+				if OrderId2String(GetUnitCurrentOrder(u))~="attack" then
 					enemy=GetNearblyEnemyUnit(u)
 
 					if enemy==nil then
 						if OrderId2String(GetUnitCurrentOrder(u))~="attack" then
 							--print(OrderId2String(GetUnitCurrentOrder(u)))
 							IssuePointOrder(u,"attack",gex(ownplayer),gey(ownplayer))
-							print("Я хочу надрать им задницы, отпусти меня!")
+							--print("Я хочу надрать им задницы, отпусти меня!")
 
 						else
 
 						end
 					else
-						if ever5sec==0 then	IssueTargetOrder(u,"attack",enemy)
-							data.over=data.over+1 end
+						if ever5sec==0 then	IssueTargetOrder(u,"attack",enemy) data.over=data.over+1 end
 						Cast(u,GetUnitX(enemy),GetUnitY(enemy),enemy) -- универсальный каст, чё нибудь куда нибудь
 					end
 				else
-					IssueTargetOrder(u,"attack",enemy)
-					print("Приказ и так = атаке")
+					--IssueTargetOrder(u,"attack",enemy)
+					--print("Приказ и так = атаке")
 				end
 
 				--[ Блок союзников
