@@ -18,8 +18,8 @@ local config   = {
 local param    = config[username]
 
 pack.build(
-		[[D:\Games\Blizzard\Warcraft III Beta\x86_64]],
-		[[C:\Users\Bergi\IdeaProjects\SpellFighters]],
+		param[1],
+		param[2],
 		'map.w3x',
 		{
 			'src',
