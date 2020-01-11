@@ -98,6 +98,7 @@ function GetNearblyAlluUnit(unit,range,flag)
 
 	if flag==1 then
 		enemy=runits[GetRandomInt(1,i)]
+		runits={}
 		if i==0 then
 			--print("Нет юнита с манной")			--enemy=unit
 		end
@@ -159,7 +160,7 @@ function InitTimers()
 					Cast(u,GetUnitX(ally),GetUnitY(ally),ally)
 					ally=nil
 				end
-				print("everTICK")
+				--print("everTICK")
 				if GetUnitAbilityLevel(u,FourCC('A021'))>0 and BlzGetUnitAbilityCooldownRemaining(u,FourCC('A021'))<=0.1 then
 					--print("cd="..BlzGetUnitAbilityCooldownRemaining(u,FourCC('A021')))
 					ally=GetNearblyAlluUnit(u,600,1)--flag 1=проверка маны а не хп

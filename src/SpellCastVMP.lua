@@ -234,7 +234,7 @@ function InitSpellTrigger()
 		elseif spellId == FourCC('A069') then -- Темная форма
 			CasrArea(caster,FourCC('A070'),casterX,casterY,10)
 			UnitAddAbility(caster,FourCC('A073'))
-			TimerStart(CreateTimer(), 5, false, function()	UnitRemoveAbility(caster,FourCC('A00K')) end)
+			TimerStart(CreateTimer(), 5, false, function()	UnitRemoveAbility(caster,FourCC('A073')) end)
 
 		elseif spellId == FourCC('A021') then -- Пополнение маны
 			SetUnitState(target,UNIT_STATE_MANA,GetUnitState(target,UNIT_STATE_MANA)+1)

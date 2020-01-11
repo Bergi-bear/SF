@@ -13,7 +13,7 @@ do
 		InitTrig_Entire()
 		InitDamage()
 		InitBars()
-		print("globalinit")
+		--print("globalinit")
 	end
 
 end
