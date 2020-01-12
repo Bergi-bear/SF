@@ -1,8 +1,25 @@
-local pack = require 'cheapack'
+local pack     = require 'cheapack'
+
+local username = os.getenv('USERNAME')
+local config   = {
+	nazarpunk   = {
+		[[D:\Games\Warcraft III\x86_64]],
+		[[C:\Users\nazarpunk\IdeaProjects\SF]]
+	},
+	bergi       = {
+		[[D:\Games\Blizzard\Warcraft III Beta\x86_64]],
+		[[C:\Users\Bergi\IdeaProjects\SpellFighters]]
+	},
+	['Василий'] = {
+		[[E:\Games\Warcraft III Beta\x86_64]],
+		[[E:\Idea]]
+	}
+}
+local param    = config[username]
 
 pack.build(
-		[[D:\Games\Blizzard\Warcraft III Beta\x86_64]],
-		[[C:\Users\Bergi\IdeaProjects\SpellFighters]],
+		param[1],
+		param[2],
 		'map.w3x',
 		{
 			'src',
