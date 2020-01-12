@@ -1,120 +1,120 @@
-gg_trg_Ally = nil
-function InitGlobals()
-end
-
-function CreateUnitsForPlayer0()
-    local p = Player(0)
-    local u
-    local unitID
-    local t
-    local life
-    u = BlzCreateUnitWithSkin(p, FourCC("H004"), -3039.8, 3328.4, 114.217, FourCC("H004"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h005"), -2944.7, 3829.7, 279.984, FourCC("h005"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h010"), -3086.5, 3582.2, 163.064, FourCC("h010"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h000"), -3400.8, 3510.5, 289.191, FourCC("h000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h007"), -3103.5, 3763.8, 1.296, FourCC("h007"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h001"), -3011.5, 3681.4, 310.252, FourCC("h001"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h008"), -3240.8, 3633.0, 341.938, FourCC("h008"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h012"), -2763.7, 3665.1, 48.902, FourCC("h012"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h011"), -2929.2, 3625.7, 103.626, FourCC("h011"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U001"), -2341.2, 3676.4, 148.979, FourCC("U001"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u003"), -3675.8, 3575.4, 356.572, FourCC("u003"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u005"), -2738.8, 3832.7, 127.259, FourCC("u005"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u006"), -1989.5, 3830.5, 75.149, FourCC("u006"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u007"), -2302.8, 3888.1, 28.796, FourCC("u007"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u010"), -3529.0, 3290.8, 274.864, FourCC("u010"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u011"), -3558.9, 3078.0, 311.710, FourCC("u011"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u014"), -3291.8, 3190.3, 124.677, FourCC("u014"))
-end
-
-function CreateUnitsForPlayer1()
-    local p = Player(1)
-    local u
-    local unitID
-    local t
-    local life
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -628.5, 910.1, 273.320, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -2286.9, 2259.7, 168.230, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -818.5, 748.8, 270.540, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -1553.7, 1576.5, 222.260, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -1628.7, 1506.9, 113.980, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("H004"), 2624.8, -2815.8, 114.220, FourCC("H004"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -731.0, 827.3, 273.320, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u005"), 110.6, 3264.3, 125.930, FourCC("u005"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h000"), -81.4, 3674.6, 179.710, FourCC("h000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1307.8, 3569.2, 87.120, FourCC("hpea"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1142.0, 3558.3, 87.120, FourCC("hpea"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1043.9, 3671.7, 87.120, FourCC("hpea"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -916.4, 3578.0, 87.120, FourCC("hpea"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -902.9, 3371.7, 87.120, FourCC("hpea"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1342.0, -1576.0, 297.592, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 456.1, -571.0, 270.540, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 543.5, -492.5, 273.320, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 646.0, -409.7, 273.320, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 746.9, -344.4, 273.320, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1418.8, -1769.7, 108.190, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1318.3, -1725.4, 53.991, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1241.1, -1641.3, 358.855, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1477.3, -1614.3, 196.550, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2700.9, -2545.5, 297.592, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2777.7, -2739.2, 108.190, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2677.2, -2694.9, 53.991, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2600.0, -2610.7, 358.855, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2509.0, -2839.8, 196.550, FourCC("U000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2541.1, -2714.4, 108.190, FourCC("U000"))
-end
-
-function CreateNeutralPassiveBuildings()
-    local p = Player(PLAYER_NEUTRAL_PASSIVE)
-    local u
-    local unitID
-    local t
-    local life
-    u = BlzCreateUnitWithSkin(p, FourCC("hlum"), 672.0, 1888.0, 270.000, FourCC("hlum"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hshy"), 608.0, 1312.0, 270.000, FourCC("hshy"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -352.0, -1760.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -288.0, -2016.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -608.0, -2016.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -352.0, -2272.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -160.0, -2656.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -416.0, -2528.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), 96.0, -2592.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), 160.0, -2272.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -96.0, -2336.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), 32.0, -2016.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -96.0, -1760.0, 270.000, FourCC("ntn2"))
-    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -608.0, -2272.0, 270.000, FourCC("ntn2"))
-end
-
-function CreateNeutralPassive()
-    local p = Player(PLAYER_NEUTRAL_PASSIVE)
-    local u
-    local unitID
-    local t
-    local life
-    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 1566.2, 655.0, 147.595, FourCC("nfac"))
-    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 1836.0, 901.4, 42.068, FourCC("nfac"))
-    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2085.2, 1066.3, 86.828, FourCC("nfac"))
-    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2413.5, 518.2, 35.069, FourCC("nfac"))
-    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2394.4, 884.8, 228.742, FourCC("nfac"))
-    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2000.6, 583.3, 184.049, FourCC("nfac"))
-end
-
-function CreatePlayerBuildings()
-end
-
-function CreatePlayerUnits()
-    CreateUnitsForPlayer0()
-    CreateUnitsForPlayer1()
-end
-
-function CreateAllUnits()
-    CreateNeutralPassiveBuildings()
-    CreatePlayerBuildings()
-    CreateNeutralPassive()
-    CreatePlayerUnits()
-end
-
+gg_trg_Ally = nil
+function InitGlobals()
+end
+
+function CreateUnitsForPlayer0()
+    local p = Player(0)
+    local u
+    local unitID
+    local t
+    local life
+    u = BlzCreateUnitWithSkin(p, FourCC("H004"), -3039.8, 3328.4, 114.217, FourCC("H004"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h005"), -2944.7, 3829.7, 279.984, FourCC("h005"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h010"), -3086.5, 3582.2, 163.064, FourCC("h010"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h000"), -3400.8, 3510.5, 289.191, FourCC("h000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h007"), -3103.5, 3763.8, 1.296, FourCC("h007"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h001"), -3011.5, 3681.4, 310.252, FourCC("h001"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h008"), -3240.8, 3633.0, 341.938, FourCC("h008"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h012"), -2763.7, 3665.1, 48.902, FourCC("h012"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h011"), -2929.2, 3625.7, 103.626, FourCC("h011"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U001"), -2341.2, 3676.4, 148.979, FourCC("U001"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u003"), -3675.8, 3575.4, 356.572, FourCC("u003"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u005"), -2738.8, 3832.7, 127.259, FourCC("u005"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u006"), -1989.5, 3830.5, 75.149, FourCC("u006"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u007"), -2302.8, 3888.1, 28.796, FourCC("u007"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u010"), -3529.0, 3290.8, 274.864, FourCC("u010"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u011"), -3558.9, 3078.0, 311.710, FourCC("u011"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u014"), -3291.8, 3190.3, 124.677, FourCC("u014"))
+end
+
+function CreateUnitsForPlayer1()
+    local p = Player(1)
+    local u
+    local unitID
+    local t
+    local life
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -628.5, 910.1, 273.320, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -2286.9, 2259.7, 168.230, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -818.5, 748.8, 270.540, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -1553.7, 1576.5, 222.260, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -1628.7, 1506.9, 113.980, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("H004"), 2624.8, -2815.8, 114.220, FourCC("H004"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), -731.0, 827.3, 273.320, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("u005"), 110.6, 3264.3, 125.930, FourCC("u005"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h000"), -81.4, 3674.6, 179.710, FourCC("h000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1307.8, 3569.2, 87.120, FourCC("hpea"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1142.0, 3558.3, 87.120, FourCC("hpea"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1043.9, 3671.7, 87.120, FourCC("hpea"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -916.4, 3578.0, 87.120, FourCC("hpea"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -902.9, 3371.7, 87.120, FourCC("hpea"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1342.0, -1576.0, 297.592, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 456.1, -571.0, 270.540, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 543.5, -492.5, 273.320, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 646.0, -409.7, 273.320, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 746.9, -344.4, 273.320, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1418.8, -1769.7, 108.190, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1318.3, -1725.4, 53.991, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1241.1, -1641.3, 358.855, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 1477.3, -1614.3, 196.550, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2700.9, -2545.5, 297.592, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2777.7, -2739.2, 108.190, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2677.2, -2694.9, 53.991, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2600.0, -2610.7, 358.855, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2509.0, -2839.8, 196.550, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2541.1, -2714.4, 108.190, FourCC("U000"))
+end
+
+function CreateNeutralPassiveBuildings()
+    local p = Player(PLAYER_NEUTRAL_PASSIVE)
+    local u
+    local unitID
+    local t
+    local life
+    u = BlzCreateUnitWithSkin(p, FourCC("hlum"), 672.0, 1888.0, 270.000, FourCC("hlum"))
+    u = BlzCreateUnitWithSkin(p, FourCC("hshy"), 608.0, 1312.0, 270.000, FourCC("hshy"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -352.0, -1760.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -288.0, -2016.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -608.0, -2016.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -352.0, -2272.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -160.0, -2656.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -416.0, -2528.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), 96.0, -2592.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), 160.0, -2272.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -96.0, -2336.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), 32.0, -2016.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -96.0, -1760.0, 270.000, FourCC("ntn2"))
+    u = BlzCreateUnitWithSkin(p, FourCC("ntn2"), -608.0, -2272.0, 270.000, FourCC("ntn2"))
+end
+
+function CreateNeutralPassive()
+    local p = Player(PLAYER_NEUTRAL_PASSIVE)
+    local u
+    local unitID
+    local t
+    local life
+    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 1566.2, 655.0, 147.595, FourCC("nfac"))
+    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 1836.0, 901.4, 42.068, FourCC("nfac"))
+    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2085.2, 1066.3, 86.828, FourCC("nfac"))
+    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2413.5, 518.2, 35.069, FourCC("nfac"))
+    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2394.4, 884.8, 228.742, FourCC("nfac"))
+    u = BlzCreateUnitWithSkin(p, FourCC("nfac"), 2000.6, 583.3, 184.049, FourCC("nfac"))
+end
+
+function CreatePlayerBuildings()
+end
+
+function CreatePlayerUnits()
+    CreateUnitsForPlayer0()
+    CreateUnitsForPlayer1()
+end
+
+function CreateAllUnits()
+    CreateNeutralPassiveBuildings()
+    CreatePlayerBuildings()
+    CreateNeutralPassive()
+    CreatePlayerUnits()
+end
+
 --CUSTOM_CODE
 ---
 --- Generated by EmmyLua(https://github.com/EmmyLua)
@@ -656,7 +656,7 @@ function InitTimers()
 	end)
 end
 function CasrArea(caster,id,x,y,range)
-
+---123
 	local dummy=CreateUnit(GetOwningPlayer(caster), FourCC('e000'), x, y, 0)--
 	UnitAddAbility(dummy,id)
 	---для одиночек
@@ -892,6 +892,7 @@ function InitSpellTrigger()
 			CasrArea(caster,FourCC('A070'),casterX,casterY,10)
 			UnitAddAbility(caster,FourCC('A073'))
 			TimerStart(CreateTimer(), 5, false, function()	UnitRemoveAbility(caster,FourCC('A073')) end)
+			--проверка
 
 		elseif spellId == FourCC('A021') then -- Пополнение маны
 			SetUnitState(target,UNIT_STATE_MANA,GetUnitState(target,UNIT_STATE_MANA)+1)
@@ -918,80 +919,80 @@ function InitSpellTrigger()
 		end
 	end)
 end
---CUSTOM_CODE
-function Trig_Ally_Actions()
-    SetPlayerAllianceStateBJ(Player(0), Player(4), bj_ALLIANCE_ALLIED_VISION)
-    SetPlayerAllianceStateBJ(Player(4), Player(0), bj_ALLIANCE_ALLIED_ADVUNITS)
-    SetPlayerAllianceStateBJ(Player(1), Player(3), bj_ALLIANCE_ALLIED_VISION)
-    SetPlayerAllianceStateBJ(Player(3), Player(1), bj_ALLIANCE_ALLIED_VISION)
-end
-
-function InitTrig_Ally()
-    gg_trg_Ally = CreateTrigger()
-    TriggerAddAction(gg_trg_Ally, Trig_Ally_Actions)
-end
-
-function InitCustomTriggers()
-    InitTrig_Ally()
-end
-
-function RunInitializationTriggers()
-    ConditionalTriggerExecute(gg_trg_Ally)
-end
-
-function InitCustomPlayerSlots()
-    SetPlayerStartLocation(Player(0), 0)
-    ForcePlayerStartLocation(Player(0), 0)
-    SetPlayerColor(Player(0), ConvertPlayerColor(0))
-    SetPlayerRacePreference(Player(0), RACE_PREF_HUMAN)
-    SetPlayerRaceSelectable(Player(0), false)
-    SetPlayerController(Player(0), MAP_CONTROL_USER)
-    SetPlayerStartLocation(Player(1), 1)
-    ForcePlayerStartLocation(Player(1), 1)
-    SetPlayerColor(Player(1), ConvertPlayerColor(1))
-    SetPlayerRacePreference(Player(1), RACE_PREF_HUMAN)
-    SetPlayerRaceSelectable(Player(1), false)
-    SetPlayerController(Player(1), MAP_CONTROL_USER)
-end
-
-function InitCustomTeams()
-    SetPlayerTeam(Player(0), 0)
-    SetPlayerState(Player(0), PLAYER_STATE_ALLIED_VICTORY, 1)
-    SetPlayerTeam(Player(1), 1)
-    SetPlayerState(Player(1), PLAYER_STATE_ALLIED_VICTORY, 1)
-end
-
-function InitAllyPriorities()
-    SetStartLocPrioCount(0, 1)
-    SetStartLocPrio(0, 0, 1, MAP_LOC_PRIO_HIGH)
-    SetStartLocPrioCount(1, 1)
-    SetStartLocPrio(1, 0, 0, MAP_LOC_PRIO_HIGH)
-end
-
-function main()
-    SetCameraBounds(-4096.0 + GetCameraMargin(CAMERA_MARGIN_LEFT), -4096.0 + GetCameraMargin(CAMERA_MARGIN_BOTTOM), 4096.0 - GetCameraMargin(CAMERA_MARGIN_RIGHT), 4096.0 - GetCameraMargin(CAMERA_MARGIN_TOP), -4096.0 + GetCameraMargin(CAMERA_MARGIN_LEFT), 4096.0 - GetCameraMargin(CAMERA_MARGIN_TOP), 4096.0 - GetCameraMargin(CAMERA_MARGIN_RIGHT), -4096.0 + GetCameraMargin(CAMERA_MARGIN_BOTTOM))
-    SetDayNightModels("Environment\\DNC\\DNCLordaeron\\DNCLordaeronTerrain\\DNCLordaeronTerrain.mdl", "Environment\\DNC\\DNCLordaeron\\DNCLordaeronUnit\\DNCLordaeronUnit.mdl")
-    NewSoundEnvironment("Default")
-    SetAmbientDaySound("LordaeronSummerDay")
-    SetAmbientNightSound("LordaeronSummerNight")
-    SetMapMusic("Music", true, 0)
-    CreateAllUnits()
-    InitBlizzard()
-    InitGlobals()
-    InitCustomTriggers()
-    RunInitializationTriggers()
-end
-
-function config()
-    SetMapName("TRIGSTR_001")
-    SetMapDescription("TRIGSTR_003")
-    SetPlayers(2)
-    SetTeams(2)
-    SetGamePlacement(MAP_PLACEMENT_TEAMS_TOGETHER)
-    DefineStartLocation(0, -2560.0, 2752.0)
-    DefineStartLocation(1, 2432.0, -2624.0)
-    InitCustomPlayerSlots()
-    InitCustomTeams()
-    InitAllyPriorities()
-end
-
+--CUSTOM_CODE
+function Trig_Ally_Actions()
+    SetPlayerAllianceStateBJ(Player(0), Player(4), bj_ALLIANCE_ALLIED_VISION)
+    SetPlayerAllianceStateBJ(Player(4), Player(0), bj_ALLIANCE_ALLIED_ADVUNITS)
+    SetPlayerAllianceStateBJ(Player(1), Player(3), bj_ALLIANCE_ALLIED_VISION)
+    SetPlayerAllianceStateBJ(Player(3), Player(1), bj_ALLIANCE_ALLIED_VISION)
+end
+
+function InitTrig_Ally()
+    gg_trg_Ally = CreateTrigger()
+    TriggerAddAction(gg_trg_Ally, Trig_Ally_Actions)
+end
+
+function InitCustomTriggers()
+    InitTrig_Ally()
+end
+
+function RunInitializationTriggers()
+    ConditionalTriggerExecute(gg_trg_Ally)
+end
+
+function InitCustomPlayerSlots()
+    SetPlayerStartLocation(Player(0), 0)
+    ForcePlayerStartLocation(Player(0), 0)
+    SetPlayerColor(Player(0), ConvertPlayerColor(0))
+    SetPlayerRacePreference(Player(0), RACE_PREF_HUMAN)
+    SetPlayerRaceSelectable(Player(0), false)
+    SetPlayerController(Player(0), MAP_CONTROL_USER)
+    SetPlayerStartLocation(Player(1), 1)
+    ForcePlayerStartLocation(Player(1), 1)
+    SetPlayerColor(Player(1), ConvertPlayerColor(1))
+    SetPlayerRacePreference(Player(1), RACE_PREF_HUMAN)
+    SetPlayerRaceSelectable(Player(1), false)
+    SetPlayerController(Player(1), MAP_CONTROL_USER)
+end
+
+function InitCustomTeams()
+    SetPlayerTeam(Player(0), 0)
+    SetPlayerState(Player(0), PLAYER_STATE_ALLIED_VICTORY, 1)
+    SetPlayerTeam(Player(1), 1)
+    SetPlayerState(Player(1), PLAYER_STATE_ALLIED_VICTORY, 1)
+end
+
+function InitAllyPriorities()
+    SetStartLocPrioCount(0, 1)
+    SetStartLocPrio(0, 0, 1, MAP_LOC_PRIO_HIGH)
+    SetStartLocPrioCount(1, 1)
+    SetStartLocPrio(1, 0, 0, MAP_LOC_PRIO_HIGH)
+end
+
+function main()
+    SetCameraBounds(-4096.0 + GetCameraMargin(CAMERA_MARGIN_LEFT), -4096.0 + GetCameraMargin(CAMERA_MARGIN_BOTTOM), 4096.0 - GetCameraMargin(CAMERA_MARGIN_RIGHT), 4096.0 - GetCameraMargin(CAMERA_MARGIN_TOP), -4096.0 + GetCameraMargin(CAMERA_MARGIN_LEFT), 4096.0 - GetCameraMargin(CAMERA_MARGIN_TOP), 4096.0 - GetCameraMargin(CAMERA_MARGIN_RIGHT), -4096.0 + GetCameraMargin(CAMERA_MARGIN_BOTTOM))
+    SetDayNightModels("Environment\\DNC\\DNCLordaeron\\DNCLordaeronTerrain\\DNCLordaeronTerrain.mdl", "Environment\\DNC\\DNCLordaeron\\DNCLordaeronUnit\\DNCLordaeronUnit.mdl")
+    NewSoundEnvironment("Default")
+    SetAmbientDaySound("LordaeronSummerDay")
+    SetAmbientNightSound("LordaeronSummerNight")
+    SetMapMusic("Music", true, 0)
+    CreateAllUnits()
+    InitBlizzard()
+    InitGlobals()
+    InitCustomTriggers()
+    RunInitializationTriggers()
+end
+
+function config()
+    SetMapName("TRIGSTR_001")
+    SetMapDescription("TRIGSTR_003")
+    SetPlayers(2)
+    SetTeams(2)
+    SetGamePlacement(MAP_PLACEMENT_TEAMS_TOGETHER)
+    DefineStartLocation(0, -2560.0, 2752.0)
+    DefineStartLocation(1, 2432.0, -2624.0)
+    InitCustomPlayerSlots()
+    InitCustomTeams()
+    InitAllyPriorities()
+end
+
