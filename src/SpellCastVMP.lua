@@ -324,15 +324,30 @@ function InitSpellTrigger()
 			end)
 
 		elseif spellId == FourCC('A106') then -- Усиление(1)
-			UnitAddAbility(caster,FourCC('A107'))
-			UnitAddAbility(caster,FourCC('A108'))
-			TimerStart(CreateTimer(), 10, false, function()
-
-				UnitRemoveAbility(caster,FourCC('A107'))
-			end)
-
-
-			--[Сложные способности]--
+			local power=10
+			--от сих
+			local data = HandleData[GetHandleId(caster)]
+			if (data==nil) then data = {} HandleData[GetHandleId(caster)] = data end
+			--до сих
+			if data.bonus==nil then	data.bonus=0 end
+			if data.bonus<4 then
+				data.bonus=data.bonus+1--момент добавления
+				UnitSetBonus(caster,4,data.bonus*power)
+				--print("бонус добавлен для "..GetUnitName(caster).." в количестве"..data.bonus)
+				TimerStart(CreateTimer(), 10, false, function()
+					data.bonus=data.bonus-1
+					UnitSetBonus(caster,4,data.bonus*power)
+					if data.bonus<=3 then
+						BlzUnitDisableAbility(caster,FourCC('A106'),false,false)--разблокировать
+					end
+				end)
+			end
+			if data.bonus>=4 then
+				BlzUnitDisableAbility(caster,spellId,true,false)--заблокировать
+				--print("юнит заблокирован")
+				IssueImmediateOrder(caster,"stop")
+			end
+			----[Сложные способности]--
 		elseif spellId == FourCC('A00J') then -- Щит маны, который поглощает 1000 урона
 
 			local data = HandleData[GetHandleId(caster)]
