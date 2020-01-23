@@ -1,5 +1,7 @@
 require 'build' {
-	run      = 'editor',
---
-	--run  = 'game',
+	--run      = 'editor',
+	reforged=true,
+	--game = 'E:\\Games\\Warcraft III\\x86_64'
+
+	run  = 'game',
 }
