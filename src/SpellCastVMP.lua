@@ -332,7 +332,7 @@ function InitSpellTrigger()
 			end)
 
 
-			--[Сложные способности]
+			--[Сложные способности]--
 		elseif spellId == FourCC('A00J') then -- Щит маны, который поглощает 1000 урона
 
 			local data = HandleData[GetHandleId(caster)]
