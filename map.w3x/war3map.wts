@@ -69,7 +69,7 @@ E
 }
 
 STRING 31
-// Abilities: A004 (Призыв Рацаря), Hotkey (Hotkey - Normal)
+// Units: n004 (Элементаль Огня), Hotkey (Hotkey)
 {
 R
 }
@@ -239,13 +239,13 @@ STRING 60
 }
 
 STRING 61
-// Abilities: A009 (Ускорение), Hotkey (Hotkey - Normal)
+// Abilities: A004 (Призыв Рацаря), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 62
-// Abilities: A009 (Ускорение), Unhotkey (Hotkey - Turn Off)
+// Abilities: A009 (Ускорение), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -363,13 +363,13 @@ W
 }
 
 STRING 86
-// Abilities: A00B (Призыв войск Церкви), Hotkey (Hotkey - Normal)
+// Abilities: A009 (Ускорение), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
 
 STRING 87
-// Abilities: A00B (Призыв войск Церкви), Unhotkey (Hotkey - Turn Off)
+// Abilities: A00B (Призыв войск Церкви), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -381,7 +381,7 @@ STRING 91
 }
 
 STRING 92
-// Units: h007 (Инквизитор), Ubertip (Tooltip - Extended)
+// Units: h007 (Инквизитор), Tip (Tooltip - Basic)
 {
 Инквизитор
 }
@@ -417,7 +417,7 @@ STRING 97
 }
 
 STRING 99
-// Abilities: A012 (Призыв Кардинала), Hotkey (Hotkey - Normal)
+// Abilities: A00B (Призыв войск Церкви), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
@@ -435,7 +435,7 @@ STRING 101
 }
 
 STRING 102
-// Abilities: A00D (Башня магов), Hotkey (Hotkey - Normal)
+// Abilities: A012 (Призыв Кардинала), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -629,13 +629,13 @@ STRING 136
 }
 
 STRING 137
-// Abilities: A00D (Башня магов), Unhotkey (Hotkey - Turn Off)
+// Abilities: A00D (Башня магов), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 138
-// Abilities: A034 (Призыв Архимаг), Hotkey (Hotkey - Normal)
+// Abilities: A00D (Башня магов), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
@@ -662,12 +662,6 @@ STRING 142
 // Abilities: A016 (Аура Брони), Name (Name)
 {
 Аура Брони
-}
-
-STRING 143
-// Abilities: A018 (Лечение Священник), Name (Name)
-{
-Лечение Священник
 }
 
 STRING 144
@@ -911,7 +905,7 @@ STRING 200
 }
 
 STRING 201
-// Abilities: A00E (Удар силы), Name (Name)
+// Abilities: A096 (Удар силы), Name (Name)
 {
 Удар силы
 }
@@ -1055,7 +1049,7 @@ STRING 226
 }
 
 STRING 228
-// Abilities: A047 (Призыв Мясного Голема), Hotkey (Hotkey - Normal)
+// Abilities: A034 (Призыв Архимаг), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1215,7 +1209,7 @@ STRING 258
 }
 
 STRING 261
-// Abilities: A00I (Метеоритный дождь), Hotkey (Hotkey - Normal)
+// Abilities: A047 (Призыв Мясного Голема), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1365,7 +1359,7 @@ STRING 289
 }
 
 STRING 290
-// Abilities: A055 (Ослабление), Hotkey (Hotkey - Normal)
+// Abilities: A00I (Метеоритный дождь), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1665,7 +1659,7 @@ STRING 342
 }
 
 STRING 347
-// Abilities: A065 (Призыв Лича), Hotkey (Hotkey - Normal)
+// Abilities: A055 (Ослабление), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1689,7 +1683,7 @@ STRING 352
 }
 
 STRING 355
-// Abilities: A066 (Массовая защита от атак), Hotkey (Hotkey - Normal)
+// Abilities: A065 (Призыв Лича), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1737,7 +1731,7 @@ STRING 364
 }
 
 STRING 365
-// Abilities: A068 (Призыв Лича), Hotkey (Hotkey - Normal)
+// Abilities: A066 (Массовая защита от атак), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1755,13 +1749,13 @@ E
 }
 
 STRING 372
-// Abilities: A071 (Призыв Демонов), Hotkey (Hotkey - Normal)
+// Abilities: A068 (Призыв Лича), Hotkey (Hotkey - Normal)
 {
 R
 }
 
 STRING 373
-// Abilities: A071 (Призыв Демонов), Unhotkey (Hotkey - Turn Off)
+// Abilities: A071 (Призыв Демонов), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -1959,7 +1953,7 @@ STRING 411
 }
 
 STRING 413
-// Abilities: A081 (Призыв Архидемона), Hotkey (Hotkey - Normal)
+// Abilities: A071 (Призыв Демонов), Unhotkey (Hotkey - Turn Off)
 {
 R
 }
@@ -1974,30 +1968,6 @@ STRING 415
 // Abilities: A080 (Смертельный ужас), Name (Name)
 {
 Смертельный ужас
-}
-
-STRING 416
-// Abilities: A082 (Смертельный ужас), Name (Name)
-{
-Смертельный ужас
-}
-
-STRING 417
-// Abilities: A082 (Смертельный ужас), EditorSuffix (Editor Suffix)
-{
-(архидемон, разложение)
-}
-
-STRING 418
-// Abilities: A082 (Смертельный ужас), Tip (Tooltip - Normal)
-{
-Смертельный ужас
-}
-
-STRING 419
-// Abilities: A082 (Смертельный ужас), Ubertip (Tooltip - Normal - Extended)
-{
-Наносит урон целям в области действия в объеме 1% их запаса здоровья в секунду. 
 }
 
 STRING 420
@@ -2019,7 +1989,7 @@ STRING 422
 }
 
 STRING 423
-// Abilities: A083 (Смертельный ужас - разложение), Hotkey (Hotkey - Normal)
+// Abilities: A081 (Призыв Архидемона), Hotkey (Hotkey - Normal)
 {
 R
 }
@@ -2028,5 +1998,683 @@ STRING 424
 // Abilities: A083 (Смертельный ужас - разложение), EditorSuffix (Editor Suffix)
 {
 (пустышка)
+}
+
+STRING 425
+// Abilities: A082 (Смертельный ужас - промах), Name (Name)
+{
+Смертельный ужас - промах
+}
+
+STRING 426
+// Abilities: A082 (Смертельный ужас - промах), EditorSuffix (Editor Suffix)
+{
+(архидемон)
+}
+
+STRING 427
+// Units: H00A (Верховный Элементалист), Name (Name)
+{
+Верховный Элементалист
+}
+
+STRING 428
+// Units: H00A (Верховный Элементалист), Awakentip (Tooltip - Awaken)
+{
+Верховный Элементалист
+}
+
+STRING 429
+// Units: n001 (Водный элементаль), Name (Name)
+{
+Водный элементаль
+}
+
+STRING 430
+// Units: n001 (Водный элементаль), Tip (Tooltip - Basic)
+{
+Водный элементаль
+}
+
+STRING 431
+// Abilities: A084 (Призыв Водных элементалей), Name (Name)
+{
+Призыв Водных элементалей
+}
+
+STRING 432
+// Abilities: A084 (Призыв Водных элементалей), Tip (Tooltip - Normal)
+{
+Призыв Водных элементалей
+}
+
+STRING 433
+// Abilities: A084 (Призыв Водных элементалей), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 434
+// Abilities: A00L (Призыв Элементалей), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 435
+// Abilities: A00L (Призыв Элементалей), Unhotkey (Hotkey - Turn Off)
+{
+Q
+}
+
+STRING 436
+// Abilities: A00L (Призыв Элементалей), Tip (Tooltip - Normal)
+{
+Призыв Элементалей
+}
+
+STRING 437
+// Abilities: A00L (Призыв Элементалей), Name (Name)
+{
+Призыв Элементалей
+}
+
+STRING 438
+// Units: h007 (Инквизитор), Ubertip (Tooltip - Extended)
+{
+Защита от магии 60%
+}
+
+STRING 439
+// Units: n001 (Водный элементаль), Ubertip (Tooltip - Extended)
+{
+Защита от магии 60%
+}
+
+STRING 440
+// Units: n002 (Элементаль земли), Name (Name)
+{
+Элементаль земли
+}
+
+STRING 441
+// Units: n002 (Элементаль земли), Tip (Tooltip - Basic)
+{
+Элементаль земли
+}
+
+STRING 442
+// Units: n002 (Элементаль земли), Ubertip (Tooltip - Extended)
+{
+Защита от магии 60%
+}
+
+STRING 443
+// Abilities: A084 (Призыв Водных элементалей), Ubertip (Tooltip - Normal - Extended)
+{
+Защита от магии 60%
+}
+
+STRING 444
+// Abilities: A085 (Призыв Элементаля Земли), Name (Name)
+{
+Призыв Элементаля Земли
+}
+
+STRING 445
+// Abilities: A085 (Призыв Элементаля Земли), Tip (Tooltip - Normal)
+{
+Призыв Элементаля Земли
+}
+
+STRING 446
+// Abilities: A085 (Призыв Элементаля Земли), Ubertip (Tooltip - Normal - Extended)
+{
+Защита от магии 60%
+}
+
+STRING 447
+// Abilities: A085 (Призыв Элементаля Земли), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 448
+// Units: n003 (Элементаль Воздуха), Name (Name)
+{
+Элементаль Воздуха
+}
+
+STRING 449
+// Abilities: A038 (Защита от магии), Ubertip (Tooltip - Normal - Extended)
+{
+Сопротивление магии 60%
+}
+
+STRING 450
+// Units: n003 (Элементаль Воздуха), Tip (Tooltip - Basic)
+{
+Элементаль Воздуха
+}
+
+STRING 451
+// Units: n004 (Элементаль Огня), Tip (Tooltip - Basic)
+{
+Эдементаль Огня
+}
+
+STRING 453
+// Abilities: A083 (Смертельный ужас - разложение), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 454
+// Abilities: A086 (Огненая волна), Name (Name)
+{
+Огненая волна
+}
+
+STRING 455
+// Abilities: A086 (Огненая волна), EditorSuffix (Editor Suffix)
+{
+(Элементаль огня)
+}
+
+STRING 456
+// Abilities: A087 (Призыв Элементаля Воздуха), Name (Name)
+{
+Призыв Элементаля Воздуха
+}
+
+STRING 457
+// Abilities: A087 (Призыв Элементаля Воздуха), Tip (Tooltip - Normal)
+{
+Призыв Элементаля Воздуха
+}
+
+STRING 458
+// Abilities: A087 (Призыв Элементаля Воздуха), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 459
+// Abilities: A088 (Призыв Элементаля Огня), Name (Name)
+{
+Призыв Элементаля Огня
+}
+
+STRING 460
+// Abilities: A088 (Призыв Элементаля Огня), Tip (Tooltip - Normal)
+{
+Призыв Элементаля Огня
+}
+
+STRING 461
+// Abilities: A088 (Призыв Элементаля Огня), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 462
+// Units: n005 (Адепт Земли), Name (Name)
+{
+Адепт Земли
+}
+
+STRING 463
+// Units: n005 (Адепт Земли), Tip (Tooltip - Basic)
+{
+Адепт Земли
+}
+
+STRING 464
+// Abilities: A089 (Активатор(A089)), Name (Name)
+{
+Активатор(A089)
+}
+
+STRING 465
+// Abilities: A089 (Активатор(A089)), Tip (Tooltip - Normal)
+{
+Активатор
+}
+
+STRING 466
+// Abilities: A089 (Активатор(A089)), EditorSuffix (Editor Suffix)
+{
+Адепт земли
+}
+
+STRING 468
+// Abilities: A090 (Сесмичесткий удар), EditorSuffix (Editor Suffix)
+{
+(адепт земли)
+}
+
+STRING 470
+// Abilities: A090 (Сесмичесткий удар), Name (Name)
+{
+Сесмичесткий удар
+}
+
+STRING 471
+// Abilities: A091 (Призыв Адепта Земли), Name (Name)
+{
+Призыв Адепта Земли
+}
+
+STRING 472
+// Abilities: A091 (Призыв Адепта Земли), Tip (Tooltip - Normal)
+{
+Призыв Адепта Земли
+}
+
+STRING 473
+// Abilities: A091 (Призыв Адепта Земли), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 474
+// Abilities: A00M (Призыв Элементалистов), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 475
+// Abilities: A00M (Призыв Элементалистов), Unhotkey (Hotkey - Turn Off)
+{
+W
+}
+
+STRING 476
+// Abilities: A00M (Призыв Элементалистов), Tip (Tooltip - Normal)
+{
+Призыв Элементалистов
+}
+
+STRING 477
+// Abilities: A00M (Призыв Элементалистов), Name (Name)
+{
+Призыв Элементалистов
+}
+
+STRING 478
+// Abilities: A021 (Востановление Энергии), EditorSuffix (Editor Suffix)
+{
+(ученик мага, послушник, адепт земли)
+}
+
+STRING 481
+// Units: n006 (Адепт огня), Name (Name)
+{
+Адепт огня
+}
+
+STRING 482
+// Units: n006 (Адепт огня), Tip (Tooltip - Basic)
+{
+Адепт огня
+}
+
+STRING 483
+// Abilities: A093 (Наделение силой), Name (Name)
+{
+Наделение силой
+}
+
+STRING 484
+// Abilities: A093 (Наделение силой), EditorSuffix (Editor Suffix)
+{
+Пассивка
+}
+
+STRING 485
+// Abilities: A093 (Наделение силой), Ubertip (Tooltip - Normal - Extended)
+{
+Увеличивает урон от атак союзников.
+}
+
+STRING 486
+// Abilities: A094 (Призыв Адепта Огня), Name (Name)
+{
+Призыв Адепта Огня
+}
+
+STRING 487
+// Abilities: A094 (Призыв Адепта Огня), Tip (Tooltip - Normal)
+{
+Призыв Адепта Огня
+}
+
+STRING 488
+// Abilities: A094 (Призыв Адепта Огня), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 489
+// Abilities: A092 (Наделение Силой Огня), Name (Name)
+{
+Наделение Силой Огня
+}
+
+STRING 490
+// Abilities: A092 (Наделение Силой Огня), Tip (Tooltip - Normal)
+{
+Наделение Силой Огня
+}
+
+STRING 491
+// Abilities: A095 (Призыв Случайного Демона), Name (Name)
+{
+Призыв Случайного Демона
+}
+
+STRING 492
+// Abilities: A095 (Призыв Случайного Демона), Tip (Tooltip - Normal)
+{
+Призыв Случайного Демона
+}
+
+STRING 493
+// Abilities: A095 (Призыв Случайного Демона), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 494
+// Units: n007 (Адепт Воздуха), Name (Name)
+{
+Адепт Воздуха
+}
+
+STRING 495
+// Units: n007 (Адепт Воздуха), Tip (Tooltip - Basic)
+{
+Адепт Воздуха
+}
+
+STRING 497
+// Abilities: A00E (Огненый Шар), Name (Name)
+{
+Огненый Шар
+}
+
+STRING 498
+// Abilities: A00E (Огненый Шар), Tip (Tooltip - Normal)
+{
+Огненый Шар
+}
+
+STRING 499
+// Abilities: A096 (Удар силы), Tip (Tooltip - Normal)
+{
+Удар силы
+}
+
+STRING 501
+// Units: n009 (Дух Воздуха), Name (Name)
+{
+Дух Воздуха
+}
+
+STRING 502
+// Abilities: A018 (Лечение), Name (Name)
+{
+Лечение
+}
+
+STRING 503
+// Abilities: A018 (Лечение), Tip (Tooltip - Normal)
+{
+Лечение
+}
+
+STRING 504
+// Abilities: A018 (Лечение), EditorSuffix (Editor Suffix)
+{
+(Священник)
+}
+
+STRING 505
+// Abilities: A092 (Наделение Силой Огня), EditorSuffix (Editor Suffix)
+{
+(адепт огня)
+}
+
+STRING 506
+// Abilities: A098 (Призыв Духа воздуха), Name (Name)
+{
+Призыв Духа воздуха
+}
+
+STRING 507
+// Abilities: A098 (Призыв Духа воздуха), Tip (Tooltip - Normal)
+{
+Призыв Духа воздуха
+}
+
+STRING 508
+// Abilities: A098 (Призыв Духа воздуха), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 509
+// Abilities: A098 (Призыв Духа воздуха), EditorSuffix (Editor Suffix)
+{
+(адепт воздуха)
+}
+
+STRING 510
+// Abilities: A097 (Декор), Name (Name)
+{
+Декор
+}
+
+STRING 511
+// Abilities: A097 (Декор), EditorSuffix (Editor Suffix)
+{
+(дух воздуха)
+}
+
+STRING 512
+// Abilities: A099 (Призыв Адепта Воздуха), Name (Name)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 513
+// Abilities: A099 (Призыв Адепта Воздуха), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 514
+// Abilities: A099 (Призыв Адепта Воздуха), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 515
+// Units: n004 (Элементаль Огня), Name (Name)
+{
+Элементаль Огня
+}
+
+STRING 516
+// Units: n008 (Торнадо), Name (Name)
+{
+Торнадо
+}
+
+STRING 520
+// Abilities: A100 (Огненая форма - горение), EditorSuffix (Editor Suffix)
+{
+(Огненый бес)
+}
+
+STRING 521
+// Abilities: A100 (Огненая форма - горение), Name (Name)
+{
+Огненая форма - горение
+}
+
+STRING 522
+// Abilities: A102 (Призыв Торнадо), Name (Name)
+{
+Призыв Торнадо
+}
+
+STRING 523
+// Abilities: A102 (Призыв Торнадо), Tip (Tooltip - Normal)
+{
+Призыв Торнадо
+}
+
+STRING 524
+// Abilities: A102 (Призыв Торнадо), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 525
+// Abilities: A101 (Раздирание торнадо), Name (Name)
+{
+Раздирание торнадо
+}
+
+STRING 526
+// Abilities: A101 (Раздирание торнадо), EditorSuffix (Editor Suffix)
+{
+(адепт земли)
+}
+
+STRING 527
+// Abilities: A069 (Активатор(A069)), EditorSuffix (Editor Suffix)
+{
+(огненаяформа)
+}
+
+STRING 528
+// Abilities: A104 (Активатор уничтожения), Name (Name)
+{
+Активатор уничтожения
+}
+
+STRING 530
+// Abilities: A104 (Активатор уничтожения), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 531
+// Abilities: A104 (Активатор уничтожения), EditorSuffix (Editor Suffix)
+{
+(торнадо)
+}
+
+STRING 532
+// Abilities: A104 (Активатор уничтожения), Tip (Tooltip - Normal)
+{
+Активатор уничтожения
+}
+
+STRING 533
+// Abilities: A105 (Самоуничтожение), Name (Name)
+{
+Самоуничтожение
+}
+
+STRING 534
+// Abilities: A105 (Самоуничтожение), Tip (Tooltip - Normal)
+{
+Самоуничтожение
+}
+
+STRING 535
+// Abilities: A106 (Усиление(1)), Tip (Tooltip - Normal)
+{
+Усиление
+}
+
+STRING 537
+// Abilities: A106 (Усиление(1)), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 538
+// Abilities: A106 (Усиление(1)), Name (Name)
+{
+Усиление(1)
+}
+
+STRING 539
+// Abilities: A107 (Усиление(1)), EditorSuffix (Editor Suffix)
+{
+(Пассивка)
+}
+
+STRING 540
+// Abilities: A107 (Усиление(1)), Name (Name)
+{
+Усиление(1)
+}
+
+STRING 541
+// Abilities: A107 (Усиление(1)), Ubertip (Tooltip - Normal - Extended)
+{
+Усиление(1)
+}
+
+STRING 542
+// Abilities: A107 (Усиление(1)), Tip (Tooltip - Normal)
+{
+Усиление(1)
+}
+
+STRING 543
+// Abilities: A108 (Усиление(2)), Name (Name)
+{
+Усиление(2)
+}
+
+STRING 544
+// Abilities: A108 (Усиление(2)), Tip (Tooltip - Normal)
+{
+Усиление(2)
+}
+
+STRING 545
+// Abilities: A108 (Усиление(2)), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 546
+// Abilities: A109 (Усиление(2)), Name (Name)
+{
+Усиление(2)
+}
+
+STRING 547
+// Abilities: A109 (Усиление(2)), EditorSuffix (Editor Suffix)
+{
+(Пассивка)
+}
+
+STRING 548
+// Abilities: A109 (Усиление(2)), Ubertip (Tooltip - Normal - Extended)
+{
+Усиление(2)
+}
+
+STRING 549
+// Abilities: A109 (Усиление(2)), Tip (Tooltip - Normal)
+{
+Усиление(2)
 }
 
