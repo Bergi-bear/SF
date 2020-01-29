@@ -271,7 +271,9 @@ function InitSpellTrigger()
 			new = CreateUnit(GetAlly(ownplayer), FourCC('n008'), casterX, casterY, GetUnitFacing(caster))
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
 
-
+		elseif spellId == FourCC('A113')then -- Призыв Адепта Воды
+			new = CreateUnit(GetAlly(ownplayer), FourCC('n010'), casterX, casterY, GetUnitFacing(caster))
+			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
 
 			--[[КАСТЫ]]--
 		elseif spellId == FourCC('A00H') then -- массовый щит
