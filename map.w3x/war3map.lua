@@ -9,29 +9,9 @@ function CreateUnitsForPlayer0()
     local t
     local life
     u = BlzCreateUnitWithSkin(p, FourCC("H004"), -3039.8, 3328.4, 114.217, FourCC("H004"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h005"), -2944.7, 3829.7, 279.984, FourCC("h005"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h010"), -3086.5, 3582.2, 163.064, FourCC("h010"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h000"), -3400.8, 3510.5, 289.191, FourCC("h000"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h007"), -3103.5, 3763.8, 1.296, FourCC("h007"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h001"), -3011.5, 3681.4, 310.252, FourCC("h001"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h008"), -3240.8, 3633.0, 341.938, FourCC("h008"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h012"), -2763.7, 3665.1, 48.902, FourCC("h012"))
-    u = BlzCreateUnitWithSkin(p, FourCC("h011"), -2929.2, 3625.7, 103.626, FourCC("h011"))
-    u = BlzCreateUnitWithSkin(p, FourCC("U001"), -2341.2, 3676.4, 148.979, FourCC("U001"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u003"), -3675.8, 3575.4, 356.572, FourCC("u003"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u005"), -2738.8, 3832.7, 127.259, FourCC("u005"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u006"), -1989.5, 3830.5, 75.149, FourCC("u006"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u007"), -2302.8, 3888.1, 28.796, FourCC("u007"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u010"), -3529.0, 3290.8, 274.864, FourCC("u010"))
-    u = BlzCreateUnitWithSkin(p, FourCC("u011"), -3558.9, 3078.0, 311.710, FourCC("u011"))
     u = BlzCreateUnitWithSkin(p, FourCC("u014"), -3291.8, 3190.3, 124.677, FourCC("u014"))
     u = BlzCreateUnitWithSkin(p, FourCC("H00A"), -2701.6, 3435.6, 193.530, FourCC("H00A"))
-    u = BlzCreateUnitWithSkin(p, FourCC("n003"), -3212.6, 3384.8, 311.582, FourCC("n003"))
-    u = BlzCreateUnitWithSkin(p, FourCC("n005"), -3477.7, 3049.8, 52.070, FourCC("n005"))
-    u = BlzCreateUnitWithSkin(p, FourCC("n006"), -2536.9, 3830.2, 297.580, FourCC("n006"))
-    u = BlzCreateUnitWithSkin(p, FourCC("n008"), -2873.3, 3168.1, 87.320, FourCC("n008"))
-    u = BlzCreateUnitWithSkin(p, FourCC("n009"), -3230.9, 2795.5, 68.326, FourCC("n009"))
-    u = BlzCreateUnitWithSkin(p, FourCC("hr01"), -2503.5, 3532.9, 188.224, FourCC("hr01"))
+    u = BlzCreateUnitWithSkin(p, FourCC("n010"), -3400.8, 2992.3, 61.760, FourCC("n010"))
 end
 
 function CreateUnitsForPlayer1()
@@ -202,7 +182,7 @@ PointOrders={"flare","dispel","cloudoffog","flamestrike","blizzard","healingward
 
 ImmediateOrders={"defend","magicdefense","militia","townbellon","avatar","divineshield","resurrection","massteleport","waterelemental","thunderclap","summonphoenix","etherealform","berserk",
 "battlestations","corporealform","whirlwind","stomp","spiritwolf","locustswarm","mirrorimage","voodoo","windwalk","raisedead","recharge","replenish","borrow","stoneform","cannibalize","sphinksform","replenishlife",
-"replenishmana","carrionscarabs","animatedead","coupletarget","manaflareon","vengeance","ravenform","bearform","taunt","roar","ambush","phaseshift","fanofknives","starfall","metamorphosis","immolation",
+"replenishmana","carrionscarabs","animatedead","coupletarget","manaflareon","vengeance","ravenform","bearform","taunt","roar","ambush", "fanofknives","starfall","metamorphosis","immolation",
 "tranquility","monsoon","frenzy","howlofterror","manashield","battleroar","elementalfury","wateryminion","slimemonster","robogoblin","tornado","chemicalrage"}
 ---@param u unit
 ---@param x real
@@ -1191,7 +1171,9 @@ function InitSpellTrigger()
 			new = CreateUnit(GetAlly(ownplayer), FourCC('n008'), casterX, casterY, GetUnitFacing(caster))
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
 
-
+		elseif spellId == FourCC('A113')then -- Призыв Адепта Воды
+			new = CreateUnit(GetAlly(ownplayer), FourCC('n010'), casterX, casterY, GetUnitFacing(caster))
+			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
 
 			--[[КАСТЫ]]--
 		elseif spellId == FourCC('A00H') then -- массовый щит
@@ -1243,8 +1225,6 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('A111') then -- Лечение Паладин
-			CasrArea(caster,FourCC('A112'),GetSpellTargetX(),GetSpellTargetY(),1000)
 
 			--- Очень Сложные Заклинания--
 		elseif spellId == FourCC('A106') then -- Усиление(1)

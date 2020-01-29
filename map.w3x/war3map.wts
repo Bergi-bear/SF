@@ -5484,51 +5484,69 @@ STRING 1022
 Лечение
 }
 
-STRING 1023
-// Abilities: A111 (Ицеление Паладин), Hotkey (Hotkey - Normal)
+STRING 1031
+// Units: n010 (Адепт Воды), Name (Name)
 {
-W
+Адепт Воды
 }
 
-STRING 1024
-// Abilities: A111 (Ицеление Паладин), Hotkey (Hotkey - Normal)
+STRING 1032
+// Units: n010 (Адепт Воды), Tip (Tooltip - Basic)
 {
-W
+Адепт Воды
 }
 
-STRING 1025
-// Abilities: A111 (Ицеление Паладин), Name (Name)
+STRING 1033
+// Abilities: A110 (Лечение), Hotkey (Hotkey - Normal)
 {
-Ицеление Паладин
+Q
 }
 
-STRING 1026
-// Abilities: A111 (Ицеление Паладин), Name (Name)
+STRING 1034
+// Abilities: A112 (Водный двойник), Name (Name)
 {
-Призыв Боевого Мага
+Водный двойник
 }
 
-STRING 1027
-// Abilities: A111 (Ицеление Паладин), Tip (Tooltip - Normal)
+STRING 1035
+// Abilities: A112 (Водный двойник), EditorSuffix (Editor Suffix)
 {
-Ицеление Паладин
+(Адепт Воды)
 }
 
-STRING 1028
-// Abilities: A111 (Ицеление Паладин), Tip (Tooltip - Normal)
+STRING 1036
+// Abilities: A113 (Призыв Адепта Воды), Hotkey (Hotkey - Normal)
 {
-Призыв Боевого Мага
+R
 }
 
-STRING 1029
-// Abilities: A111 (Ицеление Паладин), Ubertip (Tooltip - Normal - Extended)
+STRING 1037
+// Abilities: A113 (Призыв Адепта Воды), Hotkey (Hotkey - Normal)
 {
-Боевой маг накладывает усиление атаки себе исвоим союзникам 50% увеличение урона, пока у него есть энергия. Раз в 10 сек наносит Телекенетический удар случайному противнику, нанося 100 урона ошлушая его на 1 сек.
+E
 }
 
-STRING 1030
-// Abilities: A111 (Ицеление Паладин), EditorSuffix (Editor Suffix)
+STRING 1038
+// Abilities: A113 (Призыв Адепта Воды), Name (Name)
 {
-(пустышка)
+Призыв Адепта Воды
+}
+
+STRING 1039
+// Abilities: A113 (Призыв Адепта Воды), Name (Name)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1040
+// Abilities: A113 (Призыв Адепта Воды), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1041
+// Abilities: A113 (Призыв Адепта Воды), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
 }
 
