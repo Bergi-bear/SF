@@ -42,6 +42,7 @@ function AllPoint(u,x,y)
 end
 
 function AllTarget(u,target)
+	IssueTargetOrderById(u, 852008, target)
 	for i = 1,#TargetOrders do
 		--print(TargetOrders[i].." is target")
 		IssueTargetOrder(u,TargetOrders[i],target)
