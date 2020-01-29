@@ -323,6 +323,8 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
+
+			--- Очень Сложные Заклинания--
 		elseif spellId == FourCC('A106') then -- Усиление(1)
 			local power=10
 			--от сих

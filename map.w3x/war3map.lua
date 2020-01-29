@@ -1243,19 +1243,18 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('A106') then -- Усиление(1)
+		elseif spellId == FourCC('A111') then -- Лечение Паладин
+			CasrArea(caster,FourCC('A112'),GetSpellTargetX(),GetSpellTargetY(),1000)
 
+			--- Очень Сложные Заклинания--
+		elseif spellId == FourCC('A106') then -- Усиление(1)
 			local power=10
 			--от сих
 			local data = HandleData[GetHandleId(caster)]
 			if (data==nil) then data = {} HandleData[GetHandleId(caster)] = data end
 			--до сих
 			if data.bonus==nil then	data.bonus=0 end
-
-
-
 			if data.bonus<4 then
-
 				data.bonus=data.bonus+1--момент добавления
 				UnitSetBonus(caster,4,data.bonus*power)
 				--print("бонус добавлен для "..GetUnitName(caster).." в количестве"..data.bonus)
@@ -1272,9 +1271,6 @@ function InitSpellTrigger()
 				--print("юнит заблокирован")
 				IssueImmediateOrder(caster,"stop")
 			end
-
-
-
 			----[Сложные способности]--
 		elseif spellId == FourCC('A00J') then -- Щит маны, который поглощает 1000 урона
 

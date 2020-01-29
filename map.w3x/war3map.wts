@@ -87,13 +87,13 @@ W
 }
 
 STRING 34
-// Abilities: A005 (Магия защиты), Tip (Tooltip - Normal)
+// Abilities: A005 (Школа Магия защиты), Tip (Tooltip - Normal)
 {
 Книга заклинаний Q
 }
 
 STRING 35
-// Abilities: A005 (Магия защиты), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A005 (Школа Магия защиты), Ubertip (Tooltip - Normal - Extended)
 {
 Позволяет использовать следующие заклинания:
 Лечение (цель)
@@ -103,13 +103,13 @@ STRING 35
 }
 
 STRING 36
-// Abilities: A005 (Магия защиты), Name (Name)
+// Abilities: A005 (Школа Магия защиты), Name (Name)
 {
 Магия защиты
 }
 
 STRING 37
-// Abilities: A006 (Лечение), Name (Name)
+// Abilities: A018 (Лечение), Name (Name)
 {
 Лечение
 }
@@ -124,19 +124,6 @@ STRING 39
 // Abilities: A001 (Призыв войск Империи), Unhotkey (Hotkey - Turn Off)
 {
 Q
-}
-
-STRING 40
-// Abilities: A006 (Лечение), Tip (Tooltip - Normal)
-{
-Лечение [|cffffcc001-й уровень|r]
-}
-
-STRING 41
-// Abilities: A006 (Лечение), Ubertip (Tooltip - Normal - Extended)
-{
-Восстанавливает здоровье дружественной единице
-Объём лечения: 100
 }
 
 STRING 42
@@ -201,7 +188,7 @@ STRING 54
 }
 
 STRING 55
-// Abilities: A005 (Магия защиты), Hotkey (Hotkey - Normal)
+// Abilities: A005 (Школа Магия защиты), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -357,7 +344,7 @@ STRING 84
 }
 
 STRING 85
-// Abilities: A005 (Магия защиты), Hotkey (Hotkey - Normal)
+// Abilities: A005 (Школа Магия защиты), Hotkey (Hotkey - Normal)
 {
 W
 }
@@ -465,7 +452,7 @@ STRING 106
 }
 
 STRING 107
-// Abilities: A006 (Лечение), Hotkey (Hotkey - Normal)
+// Abilities: A00A (Призыв Монаха), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -519,7 +506,7 @@ STRING 117
 }
 
 STRING 118
-// Abilities: A005 (Магия защиты), Unhotkey (Hotkey - Turn Off)
+// Abilities: A005 (Школа Магия защиты), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -543,13 +530,13 @@ E
 }
 
 STRING 122
-// Abilities: A006 (Лечение), Hotkey (Hotkey - Normal)
+// Abilities: A00A (Призыв Монаха), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 123
-// Abilities: A005 (Магия защиты), Unhotkey (Hotkey - Turn Off)
+// Abilities: A005 (Школа Магия защиты), Unhotkey (Hotkey - Turn Off)
 {
 W
 }
@@ -671,7 +658,7 @@ STRING 144
 }
 
 STRING 145
-// Abilities: A006 (Лечение), Researchhotkey (Hotkey - Learn)
+// Abilities: A00F (Призыв войск Тьмы), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -923,7 +910,7 @@ STRING 203
 }
 
 STRING 204
-// Abilities: A006 (Лечение), Researchhotkey (Hotkey - Learn)
+// Abilities: A00F (Призыв войск Тьмы), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -953,7 +940,7 @@ STRING 209
 }
 
 STRING 211
-// Abilities: A00A (Призыв Монаха), Hotkey (Hotkey - Normal)
+// Abilities: A00F (Призыв войск Тьмы), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -1131,7 +1118,7 @@ STRING 243
 }
 
 STRING 244
-// Abilities: A00A (Призыв Монаха), Hotkey (Hotkey - Normal)
+// Abilities: A00F (Призыв войск Тьмы), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -1437,7 +1424,7 @@ STRING 303
 }
 
 STRING 304
-// Abilities: A00F (Призыв войск Тьмы), Hotkey (Hotkey - Normal)
+// Abilities: A00L (Призыв Элементалей), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -1473,7 +1460,7 @@ STRING 309
 }
 
 STRING 310
-// Abilities: A00F (Призыв войск Тьмы), Hotkey (Hotkey - Normal)
+// Abilities: A00L (Призыв Элементалей), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -1779,7 +1766,7 @@ STRING 376
 }
 
 STRING 378
-// Abilities: A00F (Призыв войск Тьмы), Unhotkey (Hotkey - Turn Off)
+// Abilities: A00L (Призыв Элементалей), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
@@ -2049,19 +2036,19 @@ STRING 432
 }
 
 STRING 433
-// Abilities: A00F (Призыв войск Тьмы), Unhotkey (Hotkey - Turn Off)
+// Abilities: A00L (Призыв Элементалей), Unhotkey (Hotkey - Turn Off)
 {
 Q
 }
 
 STRING 434
-// Abilities: A00L (Призыв Элементалей), Hotkey (Hotkey - Normal)
+// Abilities: A013 (Призыв Ученик Мага), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 435
-// Abilities: A00L (Призыв Элементалей), Hotkey (Hotkey - Normal)
+// Abilities: A013 (Призыв Ученик Мага), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -2271,7 +2258,7 @@ STRING 472
 }
 
 STRING 473
-// Abilities: A00L (Призыв Элементалей), Unhotkey (Hotkey - Turn Off)
+// Abilities: A019 (Пустышка), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -2421,13 +2408,13 @@ STRING 501
 }
 
 STRING 502
-// Abilities: A006 (Лечение), Name (Name)
+// Abilities: A018 (Лечение), Name (Name)
 {
 Лечение
 }
 
 STRING 503
-// Abilities: A018 (Лечение), Name (Name)
+// Abilities: A018 (Лечение), Tip (Tooltip - Normal)
 {
 Лечение
 }
@@ -2601,7 +2588,7 @@ STRING 535
 }
 
 STRING 537
-// Abilities: A00L (Призыв Элементалей), Unhotkey (Hotkey - Turn Off)
+// Abilities: A019 (Пустышка), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -2649,7 +2636,7 @@ STRING 544
 }
 
 STRING 545
-// Abilities: A013 (Призыв Ученик Мага), Hotkey (Hotkey - Normal)
+// Abilities: A039 (Призыв Скелетов), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -2749,39 +2736,20 @@ STRING 560
 Рыцарь атакует указанную цель и  будет преследовать цель, пока не убьёт её.
 }
 
-STRING 561
-// Abilities: A005 (Магия защиты), Name (Name)
-{
-Магия защиты
-}
-
 STRING 562
-// Abilities: A005 (Магия защиты), Tip (Tooltip - Normal)
+// Abilities: A005 (Школа Магия защиты), Tip (Tooltip - Normal)
 {
 Книга заклинаний Q
 }
 
 STRING 563
-// Abilities: A005 (Магия защиты), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A005 (Школа Магия защиты), Ubertip (Tooltip - Normal - Extended)
 {
 Позволяет использовать следующие заклинания:
 Лечение (цель)
 Усиление брони (площадь)
 Антимагический щит (цель)
 Ускорение (радиус действия)
-}
-
-STRING 564
-// Abilities: A006 (Лечение), Tip (Tooltip - Normal)
-{
-Лечение [|cffffcc001-й уровень|r]
-}
-
-STRING 565
-// Abilities: A006 (Лечение), Ubertip (Tooltip - Normal - Extended)
-{
-Восстанавливает здоровье дружественной единице
-Объём лечения: 100
 }
 
 STRING 566
@@ -3105,7 +3073,7 @@ STRING 616
 }
 
 STRING 617
-// Abilities: A013 (Призыв Ученик Мага), Hotkey (Hotkey - Normal)
+// Abilities: A039 (Призыв Скелетов), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -3177,7 +3145,7 @@ STRING 628
 }
 
 STRING 629
-// Abilities: A018 (Лечение), Name (Name)
+// Abilities: A018 (Лечение), Tip (Tooltip - Normal)
 {
 Лечение
 }
@@ -3189,25 +3157,25 @@ STRING 630
 }
 
 STRING 631
-// Abilities: A018 (Лечение), Tip (Tooltip - Normal)
+// Abilities: A110 (Лечение), Name (Name)
 {
 Лечение
 }
 
 STRING 632
-// Abilities: A018 (Лечение), Tip (Tooltip - Normal)
+// Abilities: A110 (Лечение), Name (Name)
 {
 Лечение
 }
 
 STRING 633
-// Abilities: A019 (Пустышка), Hotkey (Hotkey - Normal)
+// Abilities: A050 (Некротическое исцеление), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 634
-// Abilities: A019 (Пустышка), Hotkey (Hotkey - Normal)
+// Abilities: A050 (Некротическое исцеление), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -3393,13 +3361,13 @@ STRING 664
 }
 
 STRING 665
-// Abilities: A039 (Призыв Скелетов), Hotkey (Hotkey - Normal)
+// Abilities: A058 (Призыв Прислушника), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 666
-// Abilities: A039 (Призыв Скелетов), Hotkey (Hotkey - Normal)
+// Abilities: A058 (Призыв Прислушника), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -3543,13 +3511,13 @@ STRING 689
 }
 
 STRING 690
-// Abilities: A050 (Некротическое исцеление), Hotkey (Hotkey - Normal)
+// Abilities: A059 (Призыв Скелета), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 691
-// Abilities: A050 (Некротическое исцеление), Hotkey (Hotkey - Normal)
+// Abilities: A059 (Призыв Скелета), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -3789,13 +3757,13 @@ STRING 730
 }
 
 STRING 731
-// Abilities: A058 (Призыв Прислушника), Hotkey (Hotkey - Normal)
+// Abilities: A072 (Призыв Огненого Беса), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 732
-// Abilities: A058 (Призыв Прислушника), Hotkey (Hotkey - Normal)
+// Abilities: A072 (Призыв Огненого Беса), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -3813,13 +3781,13 @@ STRING 734
 }
 
 STRING 735
-// Abilities: A059 (Призыв Скелета), Hotkey (Hotkey - Normal)
+// Abilities: A084 (Призыв Водных элементалей), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 736
-// Abilities: A059 (Призыв Скелета), Hotkey (Hotkey - Normal)
+// Abilities: A084 (Призыв Водных элементалей), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -4143,13 +4111,13 @@ R
 }
 
 STRING 790
-// Abilities: A072 (Призыв Огненого Беса), Hotkey (Hotkey - Normal)
+// Abilities: A091 (Призыв Адепта Земли), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 791
-// Abilities: A072 (Призыв Огненого Беса), Hotkey (Hotkey - Normal)
+// Abilities: A091 (Призыв Адепта Земли), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -4341,13 +4309,13 @@ STRING 822
 }
 
 STRING 823
-// Abilities: A084 (Призыв Водных элементалей), Hotkey (Hotkey - Normal)
+// Abilities: A106 (Усиление(1)), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 824
-// Abilities: A084 (Призыв Водных элементалей), Hotkey (Hotkey - Normal)
+// Abilities: A106 (Усиление(1)), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -4491,13 +4459,13 @@ STRING 847
 }
 
 STRING 848
-// Abilities: A091 (Призыв Адепта Земли), Hotkey (Hotkey - Normal)
+// Abilities: A108 (Усиление(2)), Hotkey (Hotkey - Normal)
 {
 Q
 }
 
 STRING 849
-// Abilities: A091 (Призыв Адепта Земли), Hotkey (Hotkey - Normal)
+// Abilities: A108 (Усиление(2)), Hotkey (Hotkey - Normal)
 {
 Q
 }
@@ -4772,18 +4740,6 @@ STRING 894
 Самоуничтожение
 }
 
-STRING 895
-// Abilities: A106 (Усиление(1)), Hotkey (Hotkey - Normal)
-{
-Q
-}
-
-STRING 896
-// Abilities: A106 (Усиление(1)), Hotkey (Hotkey - Normal)
-{
-Q
-}
-
 STRING 897
 // Abilities: A106 (Усиление(1)), Tip (Tooltip - Normal)
 {
@@ -4812,18 +4768,6 @@ STRING 901
 // Abilities: A107 (Усиление(1)), Ubertip (Tooltip - Normal - Extended)
 {
 Усиление(1)
-}
-
-STRING 902
-// Abilities: A108 (Усиление(2)), Hotkey (Hotkey - Normal)
-{
-Q
-}
-
-STRING 903
-// Abilities: A108 (Усиление(2)), Hotkey (Hotkey - Normal)
-{
-Q
 }
 
 STRING 904
@@ -5508,5 +5452,83 @@ STRING 1017
 // Buffs/Effects: B002 (Кровотечение), EditorName (Name (Editor Only))
 {
 Кровотечение
+}
+
+STRING 1018
+// Abilities: A005 (Школа Магия защиты), Name (Name)
+{
+Школа Магия защиты
+}
+
+STRING 1019
+// Abilities: A110 (Лечение), EditorSuffix (Editor Suffix)
+{
+(Паладин)
+}
+
+STRING 1020
+// Abilities: A110 (Лечение), EditorSuffix (Editor Suffix)
+{
+(Священник)
+}
+
+STRING 1021
+// Abilities: A110 (Лечение), Tip (Tooltip - Normal)
+{
+Лечение
+}
+
+STRING 1022
+// Abilities: A110 (Лечение), Tip (Tooltip - Normal)
+{
+Лечение
+}
+
+STRING 1023
+// Abilities: A111 (Ицеление Паладин), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1024
+// Abilities: A111 (Ицеление Паладин), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1025
+// Abilities: A111 (Ицеление Паладин), Name (Name)
+{
+Ицеление Паладин
+}
+
+STRING 1026
+// Abilities: A111 (Ицеление Паладин), Name (Name)
+{
+Призыв Боевого Мага
+}
+
+STRING 1027
+// Abilities: A111 (Ицеление Паладин), Tip (Tooltip - Normal)
+{
+Ицеление Паладин
+}
+
+STRING 1028
+// Abilities: A111 (Ицеление Паладин), Tip (Tooltip - Normal)
+{
+Призыв Боевого Мага
+}
+
+STRING 1029
+// Abilities: A111 (Ицеление Паладин), Ubertip (Tooltip - Normal - Extended)
+{
+Боевой маг накладывает усиление атаки себе исвоим союзникам 50% увеличение урона, пока у него есть энергия. Раз в 10 сек наносит Телекенетический удар случайному противнику, нанося 100 урона ошлушая его на 1 сек.
+}
+
+STRING 1030
+// Abilities: A111 (Ицеление Паладин), EditorSuffix (Editor Suffix)
+{
+(пустышка)
 }
 
