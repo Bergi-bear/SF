@@ -14,6 +14,7 @@ do
 		InitDamage()
 		InitBars()
 		InitUnitDeath()
+		UpHero()
 		--print("globalinit")
 	end
 

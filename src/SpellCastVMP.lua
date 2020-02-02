@@ -144,11 +144,6 @@ function InitSpellTrigger()
 			CreateUnitSimpleEffect(caster,FourCC('n005'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 		elseif spellId == FourCC('A094')then -- Призыв Адепта Огня
 			CreateUnitSimpleEffect(caster,FourCC('n006'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
-
-
-
-			--todo-- сделать глобальное увеличение мана регина у героев на 0.3 раз в минуиту, и максимальное количество маны на 50 раз в минуту
-			--todo-- Щит мастера щитов сейчас 1000 хп, надо чтобы 0хп и увеличивался на 100 за кадую ману получаемую мастером щитов(а мана тратилась при этом) максимальный щит 1000
 		elseif spellId == FourCC('A095') then -- Призыв Случайного Демона
 			--GetMaxAttackUnit(caster)
 			--FIXME -- не работает рандомизатор демонов
@@ -248,7 +243,7 @@ function InitSpellTrigger()
 			end
 			----[Сложные способности]--
 		elseif spellId == FourCC('A00J') then -- Щит маны, который поглощает 1000 урона
-
+			--todo-- Щит мастера щитов сейчас 1000 хп, надо чтобы 0хп и увеличивался на 100 за кадую ману получаемую мастером щитов(а мана тратилась при этом) максимальный щит 1000
 			local data = HandleData[GetHandleId(caster)]
 			if (data==nil) then data = {} HandleData[GetHandleId(caster)] = data end
 			data.shieldhp = 1000

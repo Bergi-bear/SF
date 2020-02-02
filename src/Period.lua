@@ -57,11 +57,6 @@ function GetNearblyAlluUnit(unit,range,flag)
 
 	local e--временный юнит
 	local i=0
-	if flag==1 then
-		--print("Функция поиска маны")
-	end
-	--local imax=1
-
 	GroupEnumUnitsInRange(perebor,x,y,range,null)
 	while true do
 		e = FirstOfGroup(perebor)
