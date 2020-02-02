@@ -5550,3 +5550,99 @@ STRING 1041
 Призыв Адепта Воздуха
 }
 
+STRING 1042
+// Abilities: A115 (Клон), Name (Name)
+{
+Клон
+}
+
+STRING 1043
+// Abilities: A115 (Клон), Name (Name)
+{
+Наделение Силой Огня
+}
+
+STRING 1044
+// Abilities: A115 (Клон), EditorSuffix (Editor Suffix)
+{
+(адепт воды)
+}
+
+STRING 1045
+// Abilities: A115 (Клон), Tip (Tooltip - Normal)
+{
+Наделение Силой Огня
+}
+
+STRING 1046
+// Abilities: A115 (Клон), Tip (Tooltip - Normal)
+{
+Наделение Силой Огня
+}
+
+STRING 1047
+// Units: n012 (Великий Дух воды), Name (Name)
+{
+Великий Дух воды
+}
+
+STRING 1048
+// Units: n012 (Великий Дух воды), Tip (Tooltip - Basic)
+{
+Великий Дух воды
+}
+
+STRING 1049
+// Abilities: A116 (Активатор смерти - Великий водный дух), Name (Name)
+{
+Активатор смерти - Великий водный дух
+}
+
+STRING 1050
+// Abilities: A116 (Активатор смерти - Великий водный дух), Ubertip (Tooltip - Normal - Extended)
+{
+Активатор смерти - Великий водный дух
+}
+
+STRING 1051
+// Abilities: A117 (Призыв Велигого Водного Духа), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 1052
+// Abilities: A117 (Призыв Велигого Водного Духа), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 1053
+// Abilities: A117 (Призыв Велигого Водного Духа), Name (Name)
+{
+Призыв Велигого Водного Духа
+}
+
+STRING 1054
+// Abilities: A117 (Призыв Велигого Водного Духа), Name (Name)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1055
+// Abilities: A117 (Призыв Велигого Водного Духа), Tip (Tooltip - Normal)
+{
+Призыв Велигого Водного Духа
+}
+
+STRING 1056
+// Abilities: A117 (Призыв Велигого Водного Духа), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1057
+// Abilities: A117 (Призыв Велигого Водного Духа), EditorSuffix (Editor Suffix)
+{
+(адепт воды)
+}
+

@@ -51,6 +51,15 @@ function CreateUnitsForPlayer1()
     u = BlzCreateUnitWithSkin(p, FourCC("U000"), 2541.1, -2714.4, 108.190, FourCC("U000"))
 end
 
+function CreateNeutralHostile()
+    local p = Player(PLAYER_NEUTRAL_AGGRESSIVE)
+    local u
+    local unitID
+    local t
+    local life
+    u = BlzCreateUnitWithSkin(p, FourCC("n012"), -3196.1, 2849.3, 311.604, FourCC("n012"))
+end
+
 function CreateNeutralPassiveBuildings()
     local p = Player(PLAYER_NEUTRAL_PASSIVE)
     local u
@@ -98,6 +107,7 @@ end
 function CreateAllUnits()
     CreateNeutralPassiveBuildings()
     CreatePlayerBuildings()
+    CreateNeutralHostile()
     CreateNeutralPassive()
     CreatePlayerUnits()
 end
@@ -211,6 +221,7 @@ function AllPoint(u,x,y)
 end
 
 function AllTarget(u,target)
+	IssueTargetOrderById(u, 852008, target)
 	for i = 1,#TargetOrders do
 		--print(TargetOrders[i].." is target")
 		IssueTargetOrder(u,TargetOrders[i],target)
@@ -1148,13 +1159,8 @@ function InitSpellTrigger()
 		elseif spellId == FourCC('A095') then -- Призыв Случайного Демона
 
 			local z = GetRandomInt(1,2)
-
 			if z == 1 then new = CreateUnit(GetAlly(ownplayer), FourCC('n013'), casterX, casterY, GetUnitFacing(caster)) end
-
-
-
 			if z == 2 then new = CreateUnit(GetAlly(ownplayer), FourCC('n011'), casterX, casterY, GetUnitFacing(caster)) end
-
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Undead/RaiseSkeletonWarrior/RaiseSkeleton.mdl", GetUnitX(new), GetUnitY(new)))
 
 		elseif spellId == FourCC('A098')then -- Призыв Духа Воздуха
@@ -1173,6 +1179,10 @@ function InitSpellTrigger()
 
 		elseif spellId == FourCC('A113')then -- Призыв Адепта Воды
 			new = CreateUnit(GetAlly(ownplayer), FourCC('n010'), casterX, casterY, GetUnitFacing(caster))
+			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
+
+		elseif spellId == FourCC('A117')then -- Призыв Призыв Великого Водного Духа
+			new = CreateUnit(GetAlly(ownplayer), FourCC('n012'), casterX, casterY, GetUnitFacing(caster))
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
 
 			--[[КАСТЫ]]--
@@ -1224,6 +1234,7 @@ function InitSpellTrigger()
 
 				KillUnit(caster)
 			end)
+
 
 
 			--- Очень Сложные Заклинания--

@@ -243,18 +243,16 @@ function InitSpellTrigger()
 		elseif spellId == FourCC('A094')then -- Призыв Адепта Огня
 			new = CreateUnit(GetAlly(ownplayer), FourCC('n006'), casterX, casterY, GetUnitFacing(caster))
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
-
-
+			--fixme-- не работает автокаст иллюзий
+			--todo-- поиск цели с самым большим дпс для каста способности
+			--todo-- папка смерти(место и фукция где можно записывать использование способностей или событий при смерти)
+			--todo-- сделать глобальное увеличение мана регина у героев на 0.3 раз в минуиту, и максимальное количество маны на 50 раз в минуту
+			--todo-- Щит мастера щитов сейчас 1000 хп, надо чтобы 0хп и увеличивался на 100 за кадую ману получаемую мастером щитов(а мана тратилась при этом) максимальный щит 1000
 		elseif spellId == FourCC('A095') then -- Призыв Случайного Демона
-
+			--FIXME -- не работает рандомизатор демонов
 			local z = GetRandomInt(1,2)
-
 			if z == 1 then new = CreateUnit(GetAlly(ownplayer), FourCC('n013'), casterX, casterY, GetUnitFacing(caster)) end
-
-
-
 			if z == 2 then new = CreateUnit(GetAlly(ownplayer), FourCC('n011'), casterX, casterY, GetUnitFacing(caster)) end
-
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Undead/RaiseSkeletonWarrior/RaiseSkeleton.mdl", GetUnitX(new), GetUnitY(new)))
 
 		elseif spellId == FourCC('A098')then -- Призыв Духа Воздуха
@@ -273,6 +271,10 @@ function InitSpellTrigger()
 
 		elseif spellId == FourCC('A113')then -- Призыв Адепта Воды
 			new = CreateUnit(GetAlly(ownplayer), FourCC('n010'), casterX, casterY, GetUnitFacing(caster))
+			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
+
+		elseif spellId == FourCC('A117')then -- Призыв Призыв Великого Водного Духа
+			new = CreateUnit(GetAlly(ownplayer), FourCC('n012'), casterX, casterY, GetUnitFacing(caster))
 			DestroyEffect(AddSpecialEffect("Abilities/Spells/Other/Silence/SilenceAreaBirth.md", GetUnitX(new), GetUnitY(new)))
 
 			--[[КАСТЫ]]--
@@ -324,6 +326,7 @@ function InitSpellTrigger()
 
 				KillUnit(caster)
 			end)
+
 
 
 			--- Очень Сложные Заклинания--
