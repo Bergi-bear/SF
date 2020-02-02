@@ -13,6 +13,7 @@ do
 		InitTrig_Entire()
 		InitDamage()
 		InitBars()
+		InitUnitDeath()
 		--print("globalinit")
 	end
 

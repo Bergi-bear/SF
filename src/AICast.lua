@@ -42,7 +42,12 @@ function AllPoint(u,x,y)
 end
 
 function AllTarget(u,target)
-	IssueTargetOrderById(u, 852008, target)
+	--fixme-- не работает автокаст иллюзий
+	if IssueTargetOrderById(u, 852008, target) then
+		print("попытка каста иллюзий")
+	else
+		--print("провал")
+	end
 	for i = 1,#TargetOrders do
 		--print(TargetOrders[i].." is target")
 		IssueTargetOrder(u,TargetOrders[i],target)
