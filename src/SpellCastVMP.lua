@@ -222,6 +222,8 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
+		elseif spellId == FourCC('A118') then -- Пополнение ХП
+			SetUnitState(target,UNIT_STATE_LIFE,GetUnitState(target,UNIT_STATE_LIFE)+30)
 
 
 			--- Очень Сложные Заклинания--
