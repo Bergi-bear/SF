@@ -5503,15 +5503,9 @@ Q
 }
 
 STRING 1034
-// Abilities: A112 (Водный двойник), Name (Name)
+// Abilities: A006 (Водный двойник), Name (Name)
 {
 Водный двойник
-}
-
-STRING 1035
-// Abilities: A112 (Водный двойник), EditorSuffix (Editor Suffix)
-{
-(Адепт Воды)
 }
 
 STRING 1036
@@ -5644,5 +5638,143 @@ STRING 1057
 // Abilities: A117 (Призыв Велигого Водного Духа), EditorSuffix (Editor Suffix)
 {
 (адепт воды)
+}
+
+STRING 1058
+// Abilities: A006 (Водный двойник), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1059
+// Abilities: A006 (Водный двойник), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1060
+// Abilities: A006 (Водный двойник), Name (Name)
+{
+Корозия
+}
+
+STRING 1061
+// Abilities: A006 (Водный двойник), Researchtip (Tooltip - Learn)
+{
+Корозия
+}
+
+STRING 1062
+// Abilities: A006 (Водный двойник), Researchtip (Tooltip - Learn)
+{
+Корозия
+}
+
+STRING 1063
+// Abilities: A006 (Водный двойник), Tip (Tooltip - Normal)
+{
+Водный двойник
+}
+
+STRING 1064
+// Abilities: A006 (Водный двойник), Tip (Tooltip - Normal)
+{
+Корозия
+}
+
+STRING 1065
+// Abilities: A006 (Водный двойник), Ubertip (Tooltip - Normal - Extended)
+{
+Делает полную копию вражеского юнита
+}
+
+STRING 1066
+// Abilities: A006 (Водный двойник), Ubertip (Tooltip - Normal - Extended)
+{
+Корозия снижает броню на 5
+}
+
+STRING 1067
+// Abilities: A006 (Водный двойник), EditorSuffix (Editor Suffix)
+{
+(прямой снаряд)
+}
+
+STRING 1068
+// Abilities: A00N (Водный двойник), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1069
+// Abilities: A00N (Водный двойник), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1070
+// Abilities: A00N (Водный двойник), Name (Name)
+{
+Водный двойник
+}
+
+STRING 1071
+// Abilities: A00N (Водный двойник), Name (Name)
+{
+Корозия
+}
+
+STRING 1072
+// Abilities: A00N (Водный двойник), Researchtip (Tooltip - Learn)
+{
+Корозия
+}
+
+STRING 1073
+// Abilities: A00N (Водный двойник), Researchtip (Tooltip - Learn)
+{
+Корозия
+}
+
+STRING 1074
+// Abilities: A00N (Водный двойник), Tip (Tooltip - Normal)
+{
+Водный двойник
+}
+
+STRING 1075
+// Abilities: A00N (Водный двойник), Tip (Tooltip - Normal)
+{
+Корозия
+}
+
+STRING 1076
+// Abilities: A00N (Водный двойник), Ubertip (Tooltip - Normal - Extended)
+{
+Делает полную копию вражеского юнита
+}
+
+STRING 1077
+// Abilities: A00N (Водный двойник), Ubertip (Tooltip - Normal - Extended)
+{
+Корозия снижает броню на 5
+}
+
+STRING 1078
+// Abilities: A00N (Водный двойник), EditorSuffix (Editor Suffix)
+{
+(Обратный снаряд)
+}
+
+STRING 1079
+// Buffs/Effects: B003 (Снаряд водного клона), EditorName (Name (Editor Only))
+{
+Снаряд водного клона
+}
+
+STRING 1080
+// Buffs/Effects: B004 (Возвратный снаряд водного клона), EditorName (Name (Editor Only))
+{
+Возвратный снаряд водного клона
 }
 

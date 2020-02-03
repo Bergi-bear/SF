@@ -52,6 +52,27 @@ do
 					local data=HandleData[GetHandleId(shieldcaster)]
 					data.shieldhp=data.shieldhp-damage
 				end--конец щита маны
+				if GetUnitAbilityLevel(target,FourCC('B003'))>0 then-- водный клон прямой снаряд
+					UnitRemoveAbility(target,FourCC('B003'))
+					BlzSetEventDamage(0)
+					print("попал в цель")
+					--CasrArea(target,FourCC('A00N'),GetUnitX(target),GetUnitX(target),500,GetUnitX(caster),GetUnitY(caster))
+					local dummy=CreateUnit(GetOwningPlayer(target), FourCC('e000'), GetUnitX(target),GetUnitY(target), 0)
+					local data=HandleData[GetHandleId(dummy)]
+					if (data==nil) then data = {} HandleData[GetHandleId(dummy)] = data end
+					data.CloneUnitID=GetUnitTypeId(target)
+					UnitAddAbility(dummy,FourCC('A00N'))
+					Cast(dummy,0,0,caster)
+					--IssueTargetOrder(dummy,"acidbomb",caster)
+
+				end
+				if  GetUnitAbilityLevel(target,FourCC('B004'))>0 then
+					UnitRemoveAbility(target,FourCC('B004'))
+					BlzSetEventDamage(0)
+					local data=HandleData[GetHandleId(caster)]
+					CreateUnitSimpleEffect(target,data.CloneUnitID,"")
+					--TODO Вася, добавь эфект по желанию
+				end
 			end
 		end)
 	end

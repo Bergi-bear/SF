@@ -1,8 +1,16 @@
-function CasrArea(caster,id,x,y,range)
-
-	local dummy=CreateUnit(GetOwningPlayer(caster), FourCC('e000'), x, y, 0)--
-	UnitAddAbility(dummy,id)
+function CasrArea(caster,id,x,y,range, xPoz,yPoz)
+	local dx,dy=x,y
+	if xPoz~=nil then
+		print("позиция")
+		dx,dy=xPoz,yPoz
+	end
+	local dummy=CreateUnit(GetOwningPlayer(caster), FourCC('e000'), dx, dy, 0)--
+	if UnitAddAbility(dummy,id) then
+	else
+		print("ошибка добавления способности")
+	end
 	---для одиночек
+
 	if range==0 or range==nil then
 		--IssuePointOrder(dummy,"blizzard",x,y)-- на точку
 		Cast(dummy,x,y)
@@ -12,10 +20,10 @@ function CasrArea(caster,id,x,y,range)
 	GroupEnumUnitsInRange(perebor,x,y,range,null)
 	while true do
 		e = FirstOfGroup(perebor)
+		print("перебор юнитов в радиусе "..range.." "..GetUnitName(e))
 		if e == nil then break end
-
 		if UnitAlive(e) and e~=dummy then -- and GetUnitCurrentOrder(unit)~="attack" then
-			--print(GetUnitName(e).." в переборе")
+			print(GetUnitName(e).." в переборе")
 			--IssueTargetOrder(dummy,"antimagicshell",e)-- на юнита
 			--IssueTargetOrder(dummy,"acidbomb",e)-- на юнита
 			Cast(dummy,0,0,e)
