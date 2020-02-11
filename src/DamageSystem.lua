@@ -71,7 +71,7 @@ do
 					BlzSetEventDamage(0)
 					local data=HandleData[GetHandleId(caster)]
 					CreateUnitSimpleEffect(target,data.CloneUnitID,"")
-					--TODO Вася, добавь эфект по желанию
+					--TODO Вася, добавь эфект по желанию 123
 				end
 			end
 		end)
