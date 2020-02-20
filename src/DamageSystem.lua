@@ -52,6 +52,7 @@ do
 					local data=HandleData[GetHandleId(shieldcaster)]
 					data.shieldhp=data.shieldhp-damage
 				end--конец щита маны
+
 				if GetUnitAbilityLevel(target,FourCC('B003'))>0 then-- водный клон прямой снаряд
 					UnitRemoveAbility(target,FourCC('B003'))
 					BlzSetEventDamage(0)

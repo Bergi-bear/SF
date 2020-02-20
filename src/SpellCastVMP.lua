@@ -171,6 +171,10 @@ function InitSpellTrigger()
 			CreateUnitSimpleEffect(caster,FourCC('n010'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 		elseif spellId == FourCC('A117')then -- Призыв Призыв Великого Водного Духа
 			CreateUnitSimpleEffect(caster,FourCC('n012'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A118')then -- Призыв дами юнита для каста водного двойника
+			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 
 			--[[КАСТЫ]]--
 		elseif spellId == FourCC('A00H') then -- массовый щит
@@ -222,9 +226,14 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('A118') then -- Пополнение ХП
-			SetUnitState(target,UNIT_STATE_LIFE,GetUnitState(target,UNIT_STATE_LIFE)+30)
+		elseif spellId == FourCC('A006') then -- Уничтожение торнадо
+			TimerStart(CreateTimer(), 1, false, function()
 
+				KillUnit(caster)
+			end)
+
+		elseif spellId == FourCC('') then
+			CloneUnit(caster,target)--
 
 			--- Очень Сложные Заклинания--
 		elseif spellId == FourCC('A106') then -- Усиление(1)

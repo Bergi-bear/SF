@@ -11,8 +11,11 @@ function InitUnitDeath()
 		local killer=GetKillingUnit()-- его убийца
 		if killer==nil then killer=deadunit end --  сам себя
 
-		if GetUnitTypeId(deadunit)==FourCC('n002') then -- первый волк
-
+		if GetUnitTypeId(deadunit)==FourCC('n012') then -- смерть великого Духа воды, рождение средних
+			CreateUnitSimpleEffect(caster,FourCC('n012'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		--fixme не работает призыв после смерти
+			
+		--todo пример тригера когда юнит убийца(любого юнита) получает бонусы(например хп)
 		elseif GetUnitTypeId(deadunit)==FourCC('n001')  then -- мелкий волк
 
 		elseif GetUnitTypeId(deadunit)==FourCC('n003') then -- большой волк
