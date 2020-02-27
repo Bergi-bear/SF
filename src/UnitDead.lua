@@ -22,8 +22,11 @@ function InitUnitDeath()
 		--Новое
 		--todo пример тригера когда юнит убийца(любого юнита) получает бонусы(например хп)
 		if GetUnitTypeId(killer)==FourCC('n014') then -- получаем атрибуты, увеличиваем максимальное хп
-			UnitAddBonus(killer,6,50)
+			BlzSetUnitMaxHP(killer,BlzGetUnitMaxHP(killer)+50)
+			SetUnitState(killer,UNIT_STATE_LIFE,GetUnitState(killer,UNIT_STATE_LIFE)+50)
+			UnitAddBonus(killer,4,20)
 		end
+
 		
 	end)
 end

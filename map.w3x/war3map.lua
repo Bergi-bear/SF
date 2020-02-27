@@ -15,6 +15,8 @@ function CreateUnitsForPlayer0()
     u = BlzCreateUnitWithSkin(p, FourCC("n013"), -3430.0, 2782.8, 160.142, FourCC("n013"))
     u = BlzCreateUnitWithSkin(p, FourCC("n012"), -3277.3, 2815.7, 273.480, FourCC("n012"))
     u = BlzCreateUnitWithSkin(p, FourCC("n014"), -3572.5, 2713.7, 326.990, FourCC("n014"))
+    u = BlzCreateUnitWithSkin(p, FourCC("n015"), -3119.6, 3007.6, 245.500, FourCC("n015"))
+    u = BlzCreateUnitWithSkin(p, FourCC("n016"), -3329.9, 2572.0, 178.830, FourCC("n016"))
     u = BlzCreateUnitWithSkin(p, FourCC("u014"), -3291.8, 3190.3, 124.677, FourCC("u014"))
     u = BlzCreateUnitWithSkin(p, FourCC("H00A"), -2701.6, 3435.6, 193.530, FourCC("H00A"))
     u = BlzCreateUnitWithSkin(p, FourCC("n010"), -3400.8, 2992.3, 61.760, FourCC("n010"))
@@ -33,6 +35,7 @@ function CreateUnitsForPlayer1()
     u = BlzCreateUnitWithSkin(p, FourCC("U000"), -1628.7, 1506.9, 113.980, FourCC("U000"))
     u = BlzCreateUnitWithSkin(p, FourCC("H004"), 2624.8, -2815.8, 114.220, FourCC("H004"))
     u = BlzCreateUnitWithSkin(p, FourCC("U000"), -731.0, 827.3, 273.320, FourCC("U000"))
+    u = BlzCreateUnitWithSkin(p, FourCC("h000"), -3919.3, 1616.1, 185.260, FourCC("h000"))
     u = BlzCreateUnitWithSkin(p, FourCC("u005"), 110.6, 3264.3, 125.930, FourCC("u005"))
     u = BlzCreateUnitWithSkin(p, FourCC("h000"), -81.4, 3674.6, 179.710, FourCC("h000"))
     u = BlzCreateUnitWithSkin(p, FourCC("hpea"), -1307.8, 3569.2, 87.120, FourCC("hpea"))
@@ -1133,6 +1136,12 @@ function InitSpellTrigger()
 			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A122')then -- Призыв Д'ао
+			CreateUnitSimpleEffect(caster,FourCC('n015'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A123')then -- Призыв Ифрит
+			CreateUnitSimpleEffect(caster,FourCC('n014'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A125')then -- Призыв марид
+			CreateUnitSimpleEffect(caster,FourCC('n016'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 
 			--[[КАСТЫ]]--
 		elseif spellId == FourCC('A00H') then -- массовый щит
@@ -1184,14 +1193,19 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('A006') then -- Уничтожение торнадо
+		elseif spellId == FourCC('A119') then -- Клон и Уничтожение Дамми Водных Двойников
+			CloneUnit(caster,target)
 			TimerStart(CreateTimer(), 1, false, function()
 
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('') then
-			CloneUnit(caster,target)--
+		elseif spellId == FourCC('A124') then --
+			CloneUnit(caster,target)
+			TimerStart(CreateTimer(), 1, false, function()
+		--todo добавление способности на клонированный юнит
+			KillUnit(caster)
+		end)
 
 			--- Очень Сложные Заклинания--
 		elseif spellId == FourCC('A106') then -- Усиление(1)
@@ -1260,14 +1274,20 @@ function InitUnitDeath()
 
 		if GetUnitTypeId(deadunit)==FourCC('n012') then -- смерть великого Духа воды, рождение средних
 			CreateUnitSimpleEffect(caster,FourCC('n012'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
-		--fixme не работает призыв после смерти
 			
-		--todo пример тригера когда юнит убийца(любого юнита) получает бонусы(например хп)
+
 		elseif GetUnitTypeId(deadunit)==FourCC('n001')  then -- мелкий волк
-
 		elseif GetUnitTypeId(deadunit)==FourCC('n003') then -- большой волк
-
 		end
+		--Новое
+		--todo пример тригера когда юнит убийца(любого юнита) получает бонусы(например хп)
+		if GetUnitTypeId(killer)==FourCC('n014') then -- получаем атрибуты, увеличиваем максимальное хп
+			BlzSetUnitMaxHP(killer,BlzGetUnitMaxHP(killer)+50)
+			SetUnitState(killer,UNIT_STATE_LIFE,GetUnitState(killer,UNIT_STATE_LIFE)+50)
+			UnitAddBonus(killer,4,20)
+		end
+
+		
 	end)
 end
 

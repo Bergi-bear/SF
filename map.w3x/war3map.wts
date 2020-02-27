@@ -5802,3 +5802,345 @@ STRING 1091
 Великий Дух воды
 }
 
+STRING 1092
+// Abilities: A119 (Водный двойник(дамми способности)), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1093
+// Abilities: A119 (Водный двойник(дамми способности)), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1095
+// Abilities: A119 (Водный двойник(дамми способности)), Name (Name)
+{
+Корозия
+}
+
+STRING 1096
+// Abilities: A119 (Водный двойник(дамми способности)), EditorSuffix (Editor Suffix)
+{
+(Адепт воды)
+}
+
+STRING 1097
+// Abilities: A119 (Водный двойник(дамми способности)), EditorSuffix (Editor Suffix)
+{
+(dummy)
+}
+
+STRING 1098
+// Abilities: A119 (Водный двойник(дамми способности)), Tip (Tooltip - Normal)
+{
+Корозия
+}
+
+STRING 1099
+// Abilities: A119 (Водный двойник(дамми способности)), Tip (Tooltip - Normal)
+{
+Корозия
+}
+
+STRING 1100
+// Abilities: A119 (Водный двойник(дамми способности)), Ubertip (Tooltip - Normal - Extended)
+{
+Корозия
+}
+
+STRING 1101
+// Abilities: A119 (Водный двойник(дамми способности)), Ubertip (Tooltip - Normal - Extended)
+{
+Корозия
+}
+
+STRING 1102
+// Abilities: A119 (Водный двойник(дамми способности)), Name (Name)
+{
+Водный двойник(дамми способности)
+}
+
+STRING 1103
+// Units: n015 (Д'ao), Name (Name)
+{
+Д'ao
+}
+
+STRING 1104
+// Units: n015 (Д'ao), Tip (Tooltip - Basic)
+{
+Д'ao
+}
+
+STRING 1105
+// Units: n015 (Д'ao), Ubertip (Tooltip - Extended)
+{
+Д'ao
+}
+
+STRING 1106
+// Abilities: A120 (Землятресение), Name (Name)
+{
+Землятресение
+}
+
+STRING 1107
+// Abilities: A120 (Землятресение), Name (Name)
+{
+Метиоритный Дождь
+}
+
+STRING 1108
+// Abilities: A120 (Землятресение), EditorSuffix (Editor Suffix)
+{
+(Д'ао)
+}
+
+STRING 1109
+// Abilities: A120 (Землятресение), Tip (Tooltip - Normal)
+{
+Землятресение
+}
+
+STRING 1110
+// Abilities: A120 (Землятресение), Tip (Tooltip - Normal)
+{
+Метиаритный Дождь
+}
+
+STRING 1111
+// Abilities: A121 (Призыв Джинов), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 1112
+// Abilities: A121 (Призыв Джинов), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1113
+// Abilities: A121 (Призыв Джинов), Name (Name)
+{
+Призыв Джинов
+}
+
+STRING 1114
+// Abilities: A121 (Призыв Джинов), Name (Name)
+{
+Призыв Элементалистов
+}
+
+STRING 1115
+// Abilities: A121 (Призыв Джинов), Tip (Tooltip - Normal)
+{
+Призыв Джинов
+}
+
+STRING 1116
+// Abilities: A121 (Призыв Джинов), Tip (Tooltip - Normal)
+{
+Призыв Элементалистов
+}
+
+STRING 1117
+// Abilities: A121 (Призыв Джинов), Unhotkey (Hotkey - Turn Off)
+{
+R
+}
+
+STRING 1118
+// Abilities: A121 (Призыв Джинов), Unhotkey (Hotkey - Turn Off)
+{
+W
+}
+
+STRING 1119
+// Abilities: A122 (Призыв Д'ао), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 1120
+// Abilities: A122 (Призыв Д'ао), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 1121
+// Abilities: A122 (Призыв Д'ао), Name (Name)
+{
+Призыв Д'ао
+}
+
+STRING 1122
+// Abilities: A122 (Призыв Д'ао), Name (Name)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1123
+// Abilities: A122 (Призыв Д'ао), Tip (Tooltip - Normal)
+{
+Призыв Д'ао
+}
+
+STRING 1124
+// Abilities: A122 (Призыв Д'ао), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1125
+// Abilities: A123 (Призыв Ифрит), Hotkey (Hotkey - Normal)
+{
+R
+}
+
+STRING 1126
+// Abilities: A123 (Призыв Ифрит), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 1127
+// Abilities: A123 (Призыв Ифрит), Name (Name)
+{
+Призыв Ифрит
+}
+
+STRING 1128
+// Abilities: A123 (Призыв Ифрит), Name (Name)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1129
+// Abilities: A123 (Призыв Ифрит), Tip (Tooltip - Normal)
+{
+Призыв Ифрит
+}
+
+STRING 1130
+// Abilities: A123 (Призыв Ифрит), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1131
+// Units: n016 (Марид), Name (Name)
+{
+Марид
+}
+
+STRING 1132
+// Units: n016 (Марид), Tip (Tooltip - Basic)
+{
+Марид
+}
+
+STRING 1133
+// Units: n016 (Марид), Ubertip (Tooltip - Extended)
+{
+Марид
+}
+
+STRING 1134
+// Abilities: A124 (Стать союзником), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1135
+// Abilities: A124 (Стать союзником), Hotkey (Hotkey - Normal)
+{
+W
+}
+
+STRING 1136
+// Abilities: A124 (Стать союзником), Name (Name)
+{
+Стать союзником
+}
+
+STRING 1137
+// Abilities: A124 (Стать союзником), Name (Name)
+{
+Корозия
+}
+
+STRING 1138
+// Abilities: A124 (Стать союзником), EditorSuffix (Editor Suffix)
+{
+(Марид)
+}
+
+STRING 1139
+// Abilities: A124 (Стать союзником), EditorSuffix (Editor Suffix)
+{
+(dummy)
+}
+
+STRING 1140
+// Abilities: A124 (Стать союзником), Tip (Tooltip - Normal)
+{
+Корозия
+}
+
+STRING 1141
+// Abilities: A124 (Стать союзником), Tip (Tooltip - Normal)
+{
+Корозия
+}
+
+STRING 1142
+// Abilities: A124 (Стать союзником), Ubertip (Tooltip - Normal - Extended)
+{
+Корозия
+}
+
+STRING 1143
+// Abilities: A124 (Стать союзником), Ubertip (Tooltip - Normal - Extended)
+{
+Корозия
+}
+
+STRING 1144
+// Abilities: A125 (Призыв Марид), Hotkey (Hotkey - Normal)
+{
+Q
+}
+
+STRING 1145
+// Abilities: A125 (Призыв Марид), Hotkey (Hotkey - Normal)
+{
+E
+}
+
+STRING 1146
+// Abilities: A125 (Призыв Марид), Name (Name)
+{
+Призыв Марид
+}
+
+STRING 1147
+// Abilities: A125 (Призыв Марид), Name (Name)
+{
+Призыв Адепта Воздуха
+}
+
+STRING 1148
+// Abilities: A125 (Призыв Марид), Tip (Tooltip - Normal)
+{
+Призыв Марид
+}
+
+STRING 1149
+// Abilities: A125 (Призыв Марид), Tip (Tooltip - Normal)
+{
+Призыв Адепта Воздуха
+}
+

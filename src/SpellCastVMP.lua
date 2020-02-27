@@ -175,6 +175,12 @@ function InitSpellTrigger()
 			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 			CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A122')then -- Призыв Д'ао
+			CreateUnitSimpleEffect(caster,FourCC('n015'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A123')then -- Призыв Ифрит
+			CreateUnitSimpleEffect(caster,FourCC('n014'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
+		elseif spellId == FourCC('A125')then -- Призыв марид
+			CreateUnitSimpleEffect(caster,FourCC('n016'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 
 			--[[КАСТЫ]]--
 		elseif spellId == FourCC('A00H') then -- массовый щит
@@ -226,14 +232,19 @@ function InitSpellTrigger()
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('A006') then -- Уничтожение торнадо
+		elseif spellId == FourCC('A119') then -- Клон и Уничтожение Дамми Водных Двойников
+			CloneUnit(caster,target)
 			TimerStart(CreateTimer(), 1, false, function()
 
 				KillUnit(caster)
 			end)
 
-		elseif spellId == FourCC('') then
-			CloneUnit(caster,target)--
+		elseif spellId == FourCC('A124') then --
+			CloneUnit(caster,target)
+			TimerStart(CreateTimer(), 1, false, function()
+		--todo добавление способности на клонированный юнит
+			KillUnit(caster)
+		end)
 
 			--- Очень Сложные Заклинания--
 		elseif spellId == FourCC('A106') then -- Усиление(1)
