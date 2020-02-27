@@ -8,6 +8,7 @@ TargetOrders={"innerfire","slow","heal","controlmagic","invisibility","magicleas
 "deathpact","sleep","darkritual","faeriefire","renew","autodispel","cyclone","entanglingroots","flamingarrows","manaburn","shadowstrike","creepthunderbolt","mindrot","deathcoil",
 "parasite","charm","creepdevour","forkedlighting","cripple","blackarrow","acidbomb","doom","soulburn","transmute"}
 --удалённые "rejuvination"
+
 PointOrders={"flare","dispel","cloudoffog","flamestrike","blizzard","healingward","stasistrap","evileye","farsight","eathquake","ward","serpentward","shockwave","inferno","impale","deathanddecay","carrionswarm",
 "detonate","forceofnature","blink","selfdestruct","silence","rainoffire","breathofirre","volcano","stampede","healingspray","clusterrockets","summonfactory","drunkenhaze"}
 
@@ -42,7 +43,6 @@ function AllPoint(u,x,y)
 end
 
 function AllTarget(u,target)
-	--fixme-- не работает автокаст иллюзий
 	if IssueTargetOrderById(u, 852008, target) then
 		print("попытка каста иллюзий")
 	else

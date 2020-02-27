@@ -154,7 +154,7 @@ function InitSpellTrigger()
 			CreateUnitSimpleEffect(caster,FourCC('n006'),"Abilities/Spells/Other/Silence/SilenceAreaBirth.mdl")
 		elseif spellId == FourCC('A095') then -- Призыв Случайного Демона
 			--GetMaxAttackUnit(caster)
-			--FIXME -- не работает рандомизатор демонов
+			--FIXME -- Вася не работает рандомизатор демонов
 			local demon=CreateUnitSimpleEffect(caster,FourCC('n011'),"Abilities/Spells/Undead/RaiseSkeletonWarrior/RaiseSkeleton.mdl")
 			local demon=CreateUnitSimpleEffect(caster,FourCC('n013'),"Abilities/Spells/Undead/RaiseSkeletonWarrior/RaiseSkeleton.mdl")
 			if demon==nil then print("ошибка при призыве демона") end
@@ -240,11 +240,13 @@ function InitSpellTrigger()
 			end)
 
 		elseif spellId == FourCC('A124') then --
-			CloneUnit(caster,target)
+			local clone=CloneUnit(caster,target)
+			UnitAddAbility(clone,FourCC(''))
+
 			TimerStart(CreateTimer(), 1, false, function()
-		--todo добавление способности на клонированный юнит
+		--todo Вася добавление способности на клонированный юнит
 			KillUnit(caster)
-		end)
+			end)
 
 			--- Очень Сложные Заклинания--
 		elseif spellId == FourCC('A106') then -- Усиление(1)

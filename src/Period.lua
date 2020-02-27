@@ -59,6 +59,15 @@ function InitTimers()
 					--print("пополняем ману для "..GetUnitName(ally))
 					IssueTargetOrder(u,"rejuvination",ally)-- на цель-- восстановление маны
 				end
+				if GetUnitAbilityLevel(u,FourCC('A124'))>0
+						or GetUnitAbilityLevel(u,FourCC('A998'))>0
+						--or GetUnitAbilityLevel(u,FourCC('A998'))>0
+						--or GetUnitAbilityLevel(u,FourCC('A998'))>0
+						--or GetUnitAbilityLevel(u,FourCC('A998'))>0
+				then
+					ally=GetNearblyAlluUnit(u,600,2)--
+					IssueTargetOrder(u,"slowon",ally)-- на цель-- восстановление маны
+				end
 			end--иначе мертв
 		end)--endallunits
 	end)

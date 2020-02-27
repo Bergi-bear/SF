@@ -104,6 +104,9 @@ function GetNearblyAlluUnit(unit,range,flag)
 					i=i+1
 					runits[i]=e
 				end
+			elseif flag==2 then
+				i=i+1
+				runits[i]=e
 			else
 				currange=100-GetUnitStatePercent(e,UNIT_STATE_LIFE,UNIT_STATE_MAX_LIFE)
 			end
@@ -114,12 +117,12 @@ function GetNearblyAlluUnit(unit,range,flag)
 		end
 		GroupRemoveUnit(perebor,e)
 	end
-	if flag==1 then
+	if flag==1 or flag==2 then
 		enemy=runits[GetRandomInt(1,i)]
 		runits={}
 	end
 	return enemy
 end
 function CloneUnit(caster,target)
-	CreateUnit(GetAlly(GetOwningPlayer(caster)), GetUnitTypeId(target), GetUnitX(caster), GetUnitY(caster), GetUnitFacing(caster))
+	return CreateUnit(GetAlly(GetOwningPlayer(caster)), GetUnitTypeId(target), GetUnitX(caster), GetUnitY(caster), GetUnitFacing(caster))
 end

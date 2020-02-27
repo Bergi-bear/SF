@@ -22,7 +22,7 @@ function UpHero()
 				--print("приорст характеристик для "..GetUnitName(e))
 				UnitAddMaxMana(e,MaxManaBonus)
 				UnitAddBonus(e,7,ManaRegenBonus)
-				--FIXME не работает в 132 патче, 03.02.2020 ждём фикса
+				--не работает в 132 патче, 03.02.2020 ждём фикса
 				--UNIT_RF_MANA_REGENERATION
 			end
 			GroupRemoveUnit(perebor,e)
